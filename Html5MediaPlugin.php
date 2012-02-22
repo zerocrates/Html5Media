@@ -66,6 +66,7 @@ class Html5MediaPlugin extends Omeka_Plugin_Abstract
     private static function _media($type, $file, $options)
     {
         static $i = 0;
+        $i++;
 
         $mediaOptions = '';
 
@@ -88,7 +89,5 @@ class Html5MediaPlugin extends Omeka_Plugin_Abstract
 jQuery('#html5-media-$i').mediaelementplayer();
 </script>
 HTML;
-
-        $i++;
     }
 }
