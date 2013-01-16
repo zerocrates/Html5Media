@@ -24,8 +24,11 @@ class Html5MediaPlugin extends Omeka_Plugin_Abstract
             'fileExtensions' => array('mp3', 'm4a', 'wav', 'wma')),
         'video' => array(
             'mimeTypes' => array('video/flv', 'video/x-flv', 'video/mp4', 'video/m4v',
-                                 'video/webm', 'video/wmv'),
-            'fileExtensions' => array('mp4', 'm4v', 'flv', 'webm', 'wmv'))
+                                 'video/webm', 'video/wmv', 'video/quicktime'),
+            'fileExtensions' => array('mp4', 'm4v', 'flv', 'webm', 'wmv')),
+        'text' => array(
+            'mimeTypes' => array('text/vtt'),
+            'fileExtensions' => array('srt', 'vtt'))
     );
 
     public function hookInitialize()
@@ -35,6 +38,8 @@ class Html5MediaPlugin extends Omeka_Plugin_Abstract
             'Html5MediaPlugin::audio', $commonOptions + $this->_mediaOptions['audio']);
         add_file_display_callback($this->_mediaSupported['video'],
             'Html5MediaPlugin::video', $commonOptions + $this->_mediaOptions['video']);
+        add_file_display_callback($this->_mediaSupported['text'],
+            'Html5MediaPlugin::text');
     }
 
     public function hookAdminThemeHeader()
@@ -55,6 +60,11 @@ class Html5MediaPlugin extends Omeka_Plugin_Abstract
     public static function video($file, $options)
     {
         return self::_media('video', $file, $options);
+    }
+
+    public static function text($file, $options)
+    {
+        return null;
     }
 
     private function _head()
@@ -83,11 +93,61 @@ class Html5MediaPlugin extends Omeka_Plugin_Abstract
 
         $filename = html_escape($file->getWebPath('archive'));
 
+        $tracks = '';
+        foreach (self::_findTextTrackFiles($file) as $textFile) {
+            $kind = item_file('Dublin Core', 'Type', array(), $textFile);
+            $language = item_file('Dublin Core', 'Language', array(), $textFile);
+            $label = item_file('Dublin Core', 'Title', array(), $textFile);
+
+            if (!$kind) {
+                $kind = 'subtitles';
+            }
+
+            if (!$language) {
+                $language = 'en';
+            }
+
+            $trackSrc = html_escape($textFile->getWebPath('archive'));
+
+            if ($label) {
+                $labelPart = ' label="' . $label . '"';
+            } else {
+                $labelPart = '';
+            }
+
+            $tracks .= '<track kind="' . $kind . '" src="' . $trackSrc . '" srclang="' . $language . '"' . $labelPart . '>';
+        }
+
         return <<<HTML
-<$type id="html5-media-$i" src="$filename"$mediaOptions></$type>
+<$type id="html5-media-$i" src="$filename"$mediaOptions>
+$tracks
+</$type>
 <script type="text/javascript">
 jQuery('#html5-media-$i').mediaelementplayer();
 </script>
 HTML;
+    }
+
+    private static function _findTextTrackFiles($mediaFile)
+    {
+        $item = $mediaFile->getItem();
+        $mediaName = pathinfo($mediaFile->original_filename,
+            PATHINFO_FILENAME);
+
+        $trackFiles = array();
+        foreach ($item->Files as $file) {
+            if ($file->id == $mediaFile->id) {
+                continue;
+            }
+            $pathInfo = pathinfo($file->original_filename);
+            if ($pathInfo['filename'] == $mediaName
+                && isset($pathInfo['extension'])
+                && ($pathInfo['extension'] == 'srt'
+                    || $pathInfo['extension'] == 'vtt')
+            ) {
+                $trackFiles[] = $file;
+            }
+        }
+        return $trackFiles;
     }
 }
