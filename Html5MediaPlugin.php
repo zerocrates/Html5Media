@@ -7,39 +7,114 @@
 
 class Html5MediaPlugin extends Omeka_Plugin_Abstract
 {
-    protected $_hooks = array('initialize', 'admin_theme_header', 'public_theme_header');
+    protected $_hooks = array('initialize', 'admin_theme_header', 'public_theme_header', 'config', 'config_form', 'install', 'uninstall', 'upgrade');
 
-    private $_mediaOptions = array(
-        'common' => array('autoplay' => false,
-                          'controls' => true,
-                          'loop'     => false),
-        'audio'  => array(),
-        'video'  => array('width'  => '480',
-                          'height' => '270')
-    );
+    public function hookInstall()
+    {
+        $defaults = array(
+            'video' => array(
+                'options' => array(
+                    'width' => 480,
+                    'height' => 270
+                ),
+                'types' => array(
+                    'video/flv', 'video/x-flv', 'video/mp4', 'video/m4v',
+                    'video/webm', 'video/wmv', 'video/quicktime'
+                ),
+                'extensions' => array('mp4', 'm4v', 'flv', 'webm', 'wmv'),
+            ),
+            'audio' => array(
+                'types' => array(
+                    'audio/mpeg', 'audio/mp3', 'audio/wav', 'audio/m4a',
+                    'audio/wma'
+                ),
+                'extensions' => array('mp4', 'm4v', 'flv', 'webm', 'wmv'),
+            ),
+            'text' => array(
+                'types' => array('text/vtt'),
+                'extensions' => array('srt', 'vtt')
+            ),
+            'common' => array(
+                'options' => array(
+                    'autoplay' => false,
+                    'controls' => true,
+                    'loop'     => false
+                )
+            )
+        );
+        set_option('html5_media_settings', serialize($defaults));
+    }
 
-    private $_mediaSupported = array(
-        'audio' => array(
-            'mimeTypes' => array('audio/mpeg', 'audio/mp3', 'audio/wav', 'audio/m4a', 'audio/wma'),
-            'fileExtensions' => array('mp3', 'm4a', 'wav', 'wma')),
-        'video' => array(
-            'mimeTypes' => array('video/flv', 'video/x-flv', 'video/mp4', 'video/m4v',
-                                 'video/webm', 'video/wmv', 'video/quicktime'),
-            'fileExtensions' => array('mp4', 'm4v', 'flv', 'webm', 'wmv')),
-        'text' => array(
-            'mimeTypes' => array('text/vtt'),
-            'fileExtensions' => array('srt', 'vtt'))
-    );
+    public function hookUninstall()
+    {
+        delete_option('html5_media_settings');
+    }
+
+    public function hookUpgrade($oldVersion, $newVersion)
+    {
+        if (version_compare($oldVersion, '1.1', '<')) {
+            $this->hookInstall();
+        } 
+    }
 
     public function hookInitialize()
     {
-        $commonOptions = $this->_mediaOptions['common'];
-        add_file_display_callback($this->_mediaSupported['audio'],
-            'Html5MediaPlugin::audio', $commonOptions + $this->_mediaOptions['audio']);
-        add_file_display_callback($this->_mediaSupported['video'],
-            'Html5MediaPlugin::video', $commonOptions + $this->_mediaOptions['video']);
-        add_file_display_callback($this->_mediaSupported['text'],
-            'Html5MediaPlugin::text');
+        $settings = unserialize(get_option('html5_media_settings'));
+        $commonOptions = $settings['common']['options'];
+        add_file_display_callback(array(
+            'mimeTypes' => $settings['audio']['types'],
+            'fileExtensions' => $settings['audio']['extensions']
+            ), 'Html5MediaPlugin::audio',
+            $commonOptions);
+        add_file_display_callback(array(
+            'mimeTypes' => $settings['video']['types'],
+            'fileExtensions' => $settings['video']['extensions']
+            ), 'Html5MediaPlugin::video',
+            $commonOptions + $settings['video']['options']);
+        add_file_display_callback(array(
+            'mimeTypes' => $settings['text']['types'],
+            'fileExtensions' => $settings['text']['extensions']
+            ), 'Html5MediaPlugin::text');
+    }
+
+    public function hookConfigForm()
+    {
+        $settings = unserialize(get_option('html5_media_settings'));
+        
+        $audio = $settings['audio'];
+        $audio['types'] = implode(',', $audio['types']);
+        $audio['extensions'] = implode(',', $audio['extensions']);
+        
+        $video = $settings['video'];
+        $video['types'] = implode(',', $video['types']);
+        $video['extensions'] = implode(',', $video['extensions']);
+        
+        $text = $settings['text'];
+        $text['types'] = implode(',', $text['types']);
+        $text['extensions'] = implode(',', $text['extensions']);
+        
+        include 'config-form.php';
+    }
+
+    public function hookConfig()
+    {
+        $settings = unserialize(get_option('html5_media_settings'));
+        
+        $audio = $_POST['audio'];
+        $settings['audio']['types'] = explode(',', $audio['types']);
+        $settings['audio']['extensions'] = explode(',', $audio['extensions']);
+
+        $video = $_POST['video'];
+        $settings['video']['options']['width'] = (int) $video['options']['width'];
+        $settings['video']['options']['height'] = (int) $video['options']['height'];
+        $settings['video']['types'] = explode(',', $video['types']);
+        $settings['video']['extensions'] = explode(',', $video['extensions']);
+
+        $text = $_POST['text'];
+        $settings['text']['types'] = explode(',', $text['types']);
+        $settings['text']['extensions'] = explode(',', $text['extensions']);
+
+        set_option('html5_media_settings', serialize($settings));
     }
 
     public function hookAdminThemeHeader()
@@ -130,6 +205,9 @@ HTML;
 
     private static function _findTextTrackFiles($mediaFile)
     {
+        $settings = unserialize(get_option('html5_media_settings'));
+        $extensions = $settings['text']['extensions'];
+
         $item = $mediaFile->getItem();
         $mediaName = pathinfo($mediaFile->original_filename,
             PATHINFO_FILENAME);
@@ -142,8 +220,7 @@ HTML;
             $pathInfo = pathinfo($file->original_filename);
             if ($pathInfo['filename'] == $mediaName
                 && isset($pathInfo['extension'])
-                && ($pathInfo['extension'] == 'srt'
-                    || $pathInfo['extension'] == 'vtt')
+                && in_array($pathInfo['extension'], $extensions)
             ) {
                 $trackFiles[] = $file;
             }
