@@ -5,9 +5,10 @@
  * @license http://www.gnu.org/licenses/gpl-3.0.txt GPLv3 or any later version
  */
 
-class Html5MediaPlugin extends Omeka_Plugin_Abstract
+class Html5MediaPlugin extends Omeka_Plugin_AbstractPlugin
 {
-    protected $_hooks = array('initialize', 'admin_theme_header', 'public_theme_header', 'config', 'config_form', 'install', 'uninstall', 'upgrade');
+    protected $_hooks = array('initialize', 'admin_head', 'public_head',
+        'config', 'config_form', 'install', 'uninstall', 'upgrade');
 
     public function hookInstall()
     {
@@ -50,8 +51,9 @@ class Html5MediaPlugin extends Omeka_Plugin_Abstract
         delete_option('html5_media_settings');
     }
 
-    public function hookUpgrade($oldVersion, $newVersion)
+    public function hookUpgrade($args)
     {
+        $oldVersion = $args['old_version'];
         if (version_compare($oldVersion, '1.1', '<')) {
             $this->hookInstall();
         } 
@@ -117,12 +119,12 @@ class Html5MediaPlugin extends Omeka_Plugin_Abstract
         set_option('html5_media_settings', serialize($settings));
     }
 
-    public function hookAdminThemeHeader()
+    public function hookAdminHead()
     {
         $this->_head();
     }
 
-    public function hookPublicThemeHeader()
+    public function hookPublicHead()
     {
         $this->_head();
     }
@@ -144,8 +146,8 @@ class Html5MediaPlugin extends Omeka_Plugin_Abstract
 
     private function _head()
     {
-        queue_js('mediaelement-and-player.min', 'mediaelement');
-        queue_css('mediaelementplayer', 'screen', false, 'mediaelement');
+        queue_js_file('mediaelement-and-player.min', 'mediaelement');
+        queue_css_file('mediaelementplayer', 'screen', false, 'mediaelement');
     }
 
     private static function _media($type, $file, $options)
@@ -166,13 +168,13 @@ class Html5MediaPlugin extends Omeka_Plugin_Abstract
         if ($options['loop'])
             $mediaOptions .= ' loop';
 
-        $filename = html_escape($file->getWebPath('archive'));
+        $filename = html_escape($file->getWebPath('original'));
 
         $tracks = '';
         foreach (self::_findTextTrackFiles($file) as $textFile) {
-            $kind = item_file('Dublin Core', 'Type', array(), $textFile);
-            $language = item_file('Dublin Core', 'Language', array(), $textFile);
-            $label = item_file('Dublin Core', 'Title', array(), $textFile);
+            $kind = metadata($textFile, array('Dublin Core', 'Type'));
+            $language = metadata($textFile, array('Dublin Core', 'Language'));
+            $label = metadata($textFile, array('Dublin Core', 'Title'));
 
             if (!$kind) {
                 $kind = 'subtitles';
@@ -182,7 +184,7 @@ class Html5MediaPlugin extends Omeka_Plugin_Abstract
                 $language = 'en';
             }
 
-            $trackSrc = html_escape($textFile->getWebPath('archive'));
+            $trackSrc = html_escape($textFile->getWebPath('original'));
 
             if ($label) {
                 $labelPart = ' label="' . $label . '"';
