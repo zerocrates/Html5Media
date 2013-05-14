@@ -61,6 +61,8 @@ class Html5MediaPlugin extends Omeka_Plugin_AbstractPlugin
 
     public function hookInitialize()
     {
+        add_translation_source(dirname(__FILE__) . '/languages');
+
         $settings = unserialize(get_option('html5_media_settings'));
         $commonOptions = $settings['common']['options'];
         add_file_display_callback(array(
