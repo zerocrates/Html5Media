@@ -25,6 +25,9 @@ class Html5MediaPlugin extends Omeka_Plugin_AbstractPlugin
                 'extensions' => array('mp4', 'm4v', 'flv', 'webm', 'wmv'),
             ),
             'audio' => array(
+                'options' => array(
+                    'width' => 400
+                ),
                 'types' => array(
                     'audio/mpeg', 'audio/mp3', 'audio/wav', 'audio/m4a',
                     'audio/wma'
@@ -56,7 +59,12 @@ class Html5MediaPlugin extends Omeka_Plugin_AbstractPlugin
         $oldVersion = $args['old_version'];
         if (version_compare($oldVersion, '1.1', '<')) {
             $this->hookInstall();
-        } 
+        }
+        if (version_compare($oldVersion, '2.1', '<')) {
+            $settings = unserialize(get_option('html5_media_settings'));
+            $settings['audio']['options']['width'] = 400;
+            set_option('html5_media_settings', serialize($settings));
+        }
     }
 
     public function hookInitialize()
@@ -69,7 +77,7 @@ class Html5MediaPlugin extends Omeka_Plugin_AbstractPlugin
             'mimeTypes' => $settings['audio']['types'],
             'fileExtensions' => $settings['audio']['extensions']
             ), 'Html5MediaPlugin::audio',
-            $commonOptions);
+            $commonOptions + $settings['audio']['options']);
         add_file_display_callback(array(
             'mimeTypes' => $settings['video']['types'],
             'fileExtensions' => $settings['video']['extensions']
@@ -105,6 +113,7 @@ class Html5MediaPlugin extends Omeka_Plugin_AbstractPlugin
         $settings = unserialize(get_option('html5_media_settings'));
         
         $audio = $_POST['audio'];
+        $settings['audio']['options']['width'] = (int) $audio['options']['width'];
         $settings['audio']['types'] = explode(',', $audio['types']);
         $settings['audio']['extensions'] = explode(',', $audio['extensions']);
 

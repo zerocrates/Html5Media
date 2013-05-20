@@ -38,6 +38,14 @@
     <h2><?php echo __('Audio Settings'); ?></h2>
     <div class="field">
         <div class="two columns alpha">
+            <?php echo $view->formLabel('audio[options][width]', __('Width')); ?>
+        </div>
+        <div class="inputs five columns omega">
+            <?php echo $view->formText('audio[options][width]', $audio['options']['width']); ?>
+        </div>
+    </div>
+    <div class="field">
+        <div class="two columns alpha">
             <?php echo $view->formLabel('audio[types]', __('MIME Types')); ?>
         </div>
         <div class="inputs five columns omega">
