@@ -60,11 +60,14 @@ class Html5MediaPlugin extends Omeka_Plugin_AbstractPlugin
         if (version_compare($oldVersion, '1.1', '<')) {
             $this->hookInstall();
         }
+        $settings = unserialize(get_option('html5_media_settings'));
         if (version_compare($oldVersion, '2.1', '<')) {
-            $settings = unserialize(get_option('html5_media_settings'));
             $settings['audio']['options']['width'] = 400;
-            set_option('html5_media_settings', serialize($settings));
         }
+        if (version_compare($oldVersion, '2.2', '<')) {
+            $settings['video']['options']['responsive'] = false;
+        }
+        set_option('html5_media_settings', serialize($settings));
     }
 
     public function hookInitialize()
@@ -120,6 +123,7 @@ class Html5MediaPlugin extends Omeka_Plugin_AbstractPlugin
         $video = $_POST['video'];
         $settings['video']['options']['width'] = (int) $video['options']['width'];
         $settings['video']['options']['height'] = (int) $video['options']['height'];
+        $settings['video']['options']['responsive'] = (bool) $video['options']['responsive'];
         $settings['video']['types'] = explode(',', $video['types']);
         $settings['video']['extensions'] = explode(',', $video['extensions']);
 
@@ -181,6 +185,8 @@ class Html5MediaPlugin extends Omeka_Plugin_AbstractPlugin
             $mediaOptions .= ' controls';
         if ($options['loop'])
             $mediaOptions .= ' loop';
+        if ($options['responsive'])
+            $mediaOptions .= ' style="width:100%;height:100%"';
 
         $filename = html_escape($file->getWebPath('original'));
 

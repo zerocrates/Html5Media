@@ -19,6 +19,17 @@
     </div>
     <div class="field">
         <div class="two columns alpha">
+            <?php echo $view->formLabel('video[options][responsive]', __('Responsive Sizing')); ?>
+        </div>
+        <div class="inputs five columns omega">
+            <p class="explanation">
+                <?php echo __('Check the box below to allow the video player to automatically match its size to its container.'); ?>
+            </p>
+            <?php echo $view->formCheckbox('video[options][responsive]', null, array('checked' => $video['options']['responsive'])); ?>
+        </div>
+    </div>
+    <div class="field">
+        <div class="two columns alpha">
             <?php echo $view->formLabel('video[types]', __('MIME Types')); ?>
         </div>
         <div class="inputs five columns omega">

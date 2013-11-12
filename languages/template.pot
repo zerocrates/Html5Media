@@ -21,23 +21,33 @@ msgstr ""
 msgid "Video Settings"
 msgstr ""
 
-#: config-form.php:22 config-form.php:41 config-form.php:67
+#: config-form.php:22
+msgid "Responsive Sizing"
+msgstr ""
+
+#: config-form.php:26
+msgid ""
+"Check the box below to allow the video player to automatically match its "
+"size to its container."
+msgstr ""
+
+#: config-form.php:33 config-form.php:60 config-form.php:86
 msgid "MIME Types"
 msgstr ""
 
-#: config-form.php:30 config-form.php:49 config-form.php:75
+#: config-form.php:41 config-form.php:68 config-form.php:94
 msgid "Extensions"
 msgstr ""
 
-#: config-form.php:38
+#: config-form.php:49
 msgid "Audio Settings"
 msgstr ""
 
-#: config-form.php:57
+#: config-form.php:76
 msgid "Text Settings"
 msgstr ""
 
-#: config-form.php:60
+#: config-form.php:79
 msgid ""
 "Text files are data like subtitles and chapter names. HTML5 Media wil "
 "include them as tracks of audio or video files with the same original "
