@@ -158,7 +158,10 @@ class Html5MediaPlugin extends Omeka_Plugin_AbstractPlugin
     private function _head()
     {
         queue_js_file('mediaelement-and-player.min', 'mediaelement');
-        queue_css_file('mediaelementplayer', 'screen', false, 'mediaelement');
+        queue_css_file('mediaelementplayer', 'all', false, 'mediaelement');
+        if (is_admin_theme()) {
+            queue_css_file('html5media-mejs-overrides', 'all');
+        }
     }
 
     private static function _media($type, $file, $options)

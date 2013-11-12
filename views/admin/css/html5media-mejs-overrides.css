@@ -1,0 +1,20 @@
+#item-images .mejs-container div {
+    margin: 0;
+}
+
+.mejs-container button {
+    filter: none;
+    -ms-filter: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    min-height: 0;
+}
+
+.mejs-overlay-button {
+	margin: -50px 0 0 -50px !important;
+}
+
+.mejs-overlay-loading {
+	margin: -40px 0 0 -40px !important;
+}
