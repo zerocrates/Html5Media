@@ -1,0 +1,46 @@
+# Translation for the Html5Media plugin for Omeka.
+# Copyright (C) 2013 John Flatness
+# This file is distributed under the GNU General Public License, v3.
+# 
+# Translators:
+# rubenalcaraz <rubenalcarazmartinez@gmail.com>, 2013
+msgid ""
+msgstr ""
+"Project-Id-Version: omeka-plugin-Html5Media\n"
+"Report-Msgid-Bugs-To: http://github.com/zerocrates/Html5Media/issues\n"
+"POT-Creation-Date: 2013-05-14 13:53-0500\n"
+"PO-Revision-Date: 2013-09-05 08:42+0000\n"
+"Last-Translator: sergimontes <sergi.blanes@gmail.com>\n"
+"Language-Team: Catalan (Spain) (http://www.transifex.com/projects/p/omeka/language/ca_ES/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: ca_ES\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: config-form.php:3
+msgid "Video Settings"
+msgstr "Configuració de vídeo"
+
+#: config-form.php:22 config-form.php:41 config-form.php:67
+msgid "MIME Types"
+msgstr "Extensions MIME"
+
+#: config-form.php:30 config-form.php:49 config-form.php:75
+msgid "Extensions"
+msgstr "Extensions"
+
+#: config-form.php:38
+msgid "Audio Settings"
+msgstr "Configuració d'àudio"
+
+#: config-form.php:57
+msgid "Text Settings"
+msgstr "Configuració del text"
+
+#: config-form.php:60
+msgid ""
+"Text files are data like subtitles and chapter names. HTML5 Media wil "
+"include them as tracks of audio or video files with the same original "
+"filename on the same item."
+msgstr "Els arxius de text són dades com subtítols o noms dels capítols. HTML5 Media els pot incloure com pistes d'àudio o fitxers de vídeo amb el mateix nom de fitxer original en el mateix ítem."
