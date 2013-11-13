@@ -16,7 +16,8 @@ class Html5MediaPlugin extends Omeka_Plugin_AbstractPlugin
             'video' => array(
                 'options' => array(
                     'width' => 480,
-                    'height' => 270
+                    'height' => 270,
+                    'responsive' => false
                 ),
                 'types' => array(
                     'video/flv', 'video/x-flv', 'video/mp4', 'video/m4v',
@@ -32,7 +33,7 @@ class Html5MediaPlugin extends Omeka_Plugin_AbstractPlugin
                     'audio/mpeg', 'audio/mp3', 'audio/wav', 'audio/m4a',
                     'audio/wma'
                 ),
-                'extensions' => array('mp4', 'm4v', 'flv', 'webm', 'wmv'),
+                'extensions' => array('mp3', 'm4a', 'wav', 'wma'),
             ),
             'text' => array(
                 'types' => array('text/vtt'),
@@ -179,13 +180,13 @@ class Html5MediaPlugin extends Omeka_Plugin_AbstractPlugin
             $mediaOptions .= ' width="' . $options['width'] . '"';
         if (isset($options['height']))
             $mediaOptions .= ' height="' . $options['height'] . '"';
-        if ($options['autoplay'])
+        if (isset($options['autoplay']) && $options['autoplay'])
             $mediaOptions .= ' autoplay';
-        if ($options['controls'])
+        if (isset($options['controls']) && $options['controls'])
             $mediaOptions .= ' controls';
-        if ($options['loop'])
+        if (isset($options['loop']) && $options['loop'])
             $mediaOptions .= ' loop';
-        if ($options['responsive'])
+        if (isset($options['responsive']) && $options['responsive'])
             $mediaOptions .= ' style="width:100%;height:100%"';
 
         $filename = html_escape($file->getWebPath('original'));
