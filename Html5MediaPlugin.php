@@ -162,6 +162,28 @@ class Html5MediaPlugin extends Omeka_Plugin_AbstractPlugin
 
     private function _head()
     {
+        if (Zend_Registry::isRegistered('Zend_Translate')) {
+            $l10n = array(
+                'language' => get_html_lang(),
+                'strings' => array(
+                    'Download File' => __('Download File'),
+                    'Play/Pause' => __('Play/Pause'),
+                    'Mute Toggle' => __('Mute Toggle'),
+                    'Fullscreen' => __('Fullscreen'),
+                    'Captions/Subtitles' => __('Captions/Subtitles'),
+                    'None' => __('None'),
+                    'Turn off Fullscreen' => __('Turn off Fullscreen'),
+                    'Go Fullscreen' => __('Go Fullscreen'),
+                    'Unmute' => __('Unmute'),
+                    'Mute' => __('Mute'),
+                    'Download Video' => __('Download Video'),
+                    'Close' => __('Close')
+                )
+            );
+            $l10nScript = 'mejsL10n = ' . js_escape($l10n) . ';';
+            queue_js_string($l10nScript);
+        }
+
         queue_js_file('mediaelement-and-player.min', 'mediaelement');
         queue_css_file('mediaelementplayer', 'all', false, 'mediaelement');
         if (is_admin_theme()) {

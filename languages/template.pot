@@ -17,6 +17,54 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
+#: Html5MediaPlugin.php:175
+msgid "Download File"
+msgstr ""
+
+#: Html5MediaPlugin.php:176
+msgid "Play/Pause"
+msgstr ""
+
+#: Html5MediaPlugin.php:177
+msgid "Mute Toggle"
+msgstr ""
+
+#: Html5MediaPlugin.php:178
+msgid "Fullscreen"
+msgstr ""
+
+#: Html5MediaPlugin.php:179
+msgid "Captions/Subtitles"
+msgstr ""
+
+#: Html5MediaPlugin.php:180
+msgid "None"
+msgstr ""
+
+#: Html5MediaPlugin.php:181
+msgid "Turn off Fullscreen"
+msgstr ""
+
+#: Html5MediaPlugin.php:182
+msgid "Go Fullscreen"
+msgstr ""
+
+#: Html5MediaPlugin.php:183
+msgid "Unmute"
+msgstr ""
+
+#: Html5MediaPlugin.php:184
+msgid "Mute"
+msgstr ""
+
+#: Html5MediaPlugin.php:185
+msgid "Download Video"
+msgstr ""
+
+#: Html5MediaPlugin.php:186
+msgid "Close"
+msgstr ""
+
 #: config-form.php:3
 msgid "Video Settings"
 msgstr ""
