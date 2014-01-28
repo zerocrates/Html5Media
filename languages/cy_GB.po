@@ -3,102 +3,102 @@
 # This file is distributed under the GNU General Public License, v3.
 # 
 # Translators:
-# rubenalcaraz <rubenalcarazmartinez@gmail.com>, 2013-2014
+# sionengland <sne@llgc.org.uk>, 2014
 msgid ""
 msgstr ""
 "Project-Id-Version: omeka-plugin-Html5Media\n"
 "Report-Msgid-Bugs-To: http://github.com/zerocrates/Html5Media/issues\n"
 "POT-Creation-Date: 2013-05-14 13:53-0500\n"
-"PO-Revision-Date: 2014-01-24 13:37+0000\n"
-"Last-Translator: rubenalcaraz <rubenalcarazmartinez@gmail.com>\n"
-"Language-Team: Catalan (Spain) (http://www.transifex.com/projects/p/omeka/language/ca_ES/)\n"
+"PO-Revision-Date: 2014-01-22 12:49+0000\n"
+"Last-Translator: sionengland <sne@llgc.org.uk>\n"
+"Language-Team: Welsh (United Kingdom) (http://www.transifex.com/projects/p/omeka/language/cy_GB/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: ca_ES\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Language: cy_GB\n"
+"Plural-Forms: nplurals=4; plural=(n==1) ? 0 : (n==2) ? 1 : (n != 8 && n != 11) ? 2 : 3;\n"
 
 #: Html5MediaPlugin.php:175
 msgid "Download File"
-msgstr "Descarregueu el fitxer"
+msgstr "Lawrlwytho Ffeil"
 
 #: Html5MediaPlugin.php:176
 msgid "Play/Pause"
-msgstr "Play/Pausa"
+msgstr "Chwarae/Atal"
 
 #: Html5MediaPlugin.php:177
 msgid "Mute Toggle"
-msgstr "Activeu silenci"
+msgstr "Tawelu: ymlaen/i ffwrdd"
 
 #: Html5MediaPlugin.php:178
 msgid "Fullscreen"
-msgstr "Pantalla completa"
+msgstr "Llond Sgrin"
 
 #: Html5MediaPlugin.php:179
 msgid "Captions/Subtitles"
-msgstr "Subtítols"
+msgstr "Penawdau/Is-deitlau"
 
 #: Html5MediaPlugin.php:180
 msgid "None"
-msgstr "Cap"
+msgstr "Dim"
 
 #: Html5MediaPlugin.php:181
 msgid "Turn off Fullscreen"
-msgstr "Desactiveu la pantalla completa"
+msgstr "Troi Llond Sgrin i Ffwrdd"
 
 #: Html5MediaPlugin.php:182
 msgid "Go Fullscreen"
-msgstr "Pantalla completa"
+msgstr "Llond Sgrin"
 
 #: Html5MediaPlugin.php:183
 msgid "Unmute"
-msgstr "Activeu el so"
+msgstr "Sain Ymlaen"
 
 #: Html5MediaPlugin.php:184
 msgid "Mute"
-msgstr "Desactiveu el so"
+msgstr "Tawelu"
 
 #: Html5MediaPlugin.php:185
 msgid "Download Video"
-msgstr "Descarregueu el vídeo"
+msgstr "Lawrlwytho Fidio"
 
 #: Html5MediaPlugin.php:186
 msgid "Close"
-msgstr "Tanca"
+msgstr "Cau"
 
 #: config-form.php:3
 msgid "Video Settings"
-msgstr "Configuració de vídeo"
+msgstr "Gosodiadau Fidio"
 
 #: config-form.php:22
 msgid "Responsive Sizing"
-msgstr "Mida adaptativa"
+msgstr "Maint ymatebol"
 
 #: config-form.php:26
 msgid ""
 "Check the box below to allow the video player to automatically match its "
 "size to its container."
-msgstr "Marqueu la casella per permetre que el reproductor de vídeo coincideixi automàticament amb la seva mida del seu contenidor."
+msgstr "Cliciwch isod er mwyn galluogi i'r chwaraewr fidio newid maint yn awtomatig er mwyn ffitio yn y blwch priodol."
 
 #: config-form.php:33 config-form.php:60 config-form.php:86
 msgid "MIME Types"
-msgstr "Extensions MIME"
+msgstr "Mathau MIME"
 
 #: config-form.php:41 config-form.php:68 config-form.php:94
 msgid "Extensions"
-msgstr "Extensions"
+msgstr "Estyniadau"
 
 #: config-form.php:49
 msgid "Audio Settings"
-msgstr "Configuració d'àudio"
+msgstr "Gosodiadau Sain"
 
 #: config-form.php:76
 msgid "Text Settings"
-msgstr "Configuració del text"
+msgstr "Gosodiadau Testun"
 
 #: config-form.php:79
 msgid ""
 "Text files are data like subtitles and chapter names. HTML5 Media wil "
 "include them as tracks of audio or video files with the same original "
 "filename on the same item."
-msgstr "Els arxius de text són dades com subtítols o noms dels capítols. HTML5 Media els pot incloure com pistes d'àudio o fitxers de vídeo amb el mateix nom de fitxer original en el mateix ítem."
+msgstr "Mae feiliau testun fel is-deitlau a theitlau pennodau. Bydd HTML5 Media yn eu cynnwys fel traciau sain neu fidio gyda'r un enw ffeil a'r enw ffeil gwreiddiol yn yr un eitem."

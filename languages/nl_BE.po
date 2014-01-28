@@ -3,14 +3,14 @@
 # This file is distributed under the GNU General Public License, v3.
 # 
 # Translators:
-# dewulfevy <evy.dewulf@libis.kuleuven.be>, 2013
+# dewulfevy <evy.dewulf@libis.kuleuven.be>, 2013-2014
 msgid ""
 msgstr ""
 "Project-Id-Version: omeka-plugin-Html5Media\n"
 "Report-Msgid-Bugs-To: http://github.com/zerocrates/Html5Media/issues\n"
 "POT-Creation-Date: 2013-05-14 13:53-0500\n"
-"PO-Revision-Date: 2013-06-15 07:16+0000\n"
-"Last-Translator: Sam Alloing <sam.alloing@gmail.com>\n"
+"PO-Revision-Date: 2014-01-24 11:48+0000\n"
+"Last-Translator: dewulfevy <evy.dewulf@libis.kuleuven.be>\n"
 "Language-Team: Dutch (Belgium) (http://www.transifex.com/projects/p/omeka/language/nl_BE/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -18,27 +18,85 @@ msgstr ""
 "Language: nl_BE\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
+#: Html5MediaPlugin.php:175
+msgid "Download File"
+msgstr "Download bestand"
+
+#: Html5MediaPlugin.php:176
+msgid "Play/Pause"
+msgstr "Speel af/Pauzeer"
+
+#: Html5MediaPlugin.php:177
+msgid "Mute Toggle"
+msgstr "Schakelaar voor het dempen"
+
+#: Html5MediaPlugin.php:178
+msgid "Fullscreen"
+msgstr "Volledig scherm"
+
+#: Html5MediaPlugin.php:179
+msgid "Captions/Subtitles"
+msgstr "Hoofdingen/Ondertitels"
+
+#: Html5MediaPlugin.php:180
+msgid "None"
+msgstr "Niets"
+
+#: Html5MediaPlugin.php:181
+msgid "Turn off Fullscreen"
+msgstr "Zet volledig scherm af"
+
+#: Html5MediaPlugin.php:182
+msgid "Go Fullscreen"
+msgstr "Ga naar volledig scherm"
+
+#: Html5MediaPlugin.php:183
+msgid "Unmute"
+msgstr "Dempen uit"
+
+#: Html5MediaPlugin.php:184
+msgid "Mute"
+msgstr "Dempen"
+
+#: Html5MediaPlugin.php:185
+msgid "Download Video"
+msgstr "Download video"
+
+#: Html5MediaPlugin.php:186
+msgid "Close"
+msgstr "Sluiten"
+
 #: config-form.php:3
 msgid "Video Settings"
 msgstr "Video-instellingen"
 
-#: config-form.php:22 config-form.php:41 config-form.php:67
+#: config-form.php:22
+msgid "Responsive Sizing"
+msgstr "Toegankelijke grootte"
+
+#: config-form.php:26
+msgid ""
+"Check the box below to allow the video player to automatically match its "
+"size to its container."
+msgstr "Vink het vakje hieronder aan om de videospeler toe te staan zijn grootte automatisch af te stemmen op zijn container."
+
+#: config-form.php:33 config-form.php:60 config-form.php:86
 msgid "MIME Types"
 msgstr "MIME Types"
 
-#: config-form.php:30 config-form.php:49 config-form.php:75
+#: config-form.php:41 config-form.php:68 config-form.php:94
 msgid "Extensions"
 msgstr "Extensies"
 
-#: config-form.php:38
+#: config-form.php:49
 msgid "Audio Settings"
 msgstr "Audio-instellingen"
 
-#: config-form.php:57
+#: config-form.php:76
 msgid "Text Settings"
 msgstr "Tekstinstellingen"
 
-#: config-form.php:60
+#: config-form.php:79
 msgid ""
 "Text files are data like subtitles and chapter names. HTML5 Media wil "
 "include them as tracks of audio or video files with the same original "
