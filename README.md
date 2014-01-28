@@ -6,6 +6,11 @@ cross-browser HTML5 `<video>` and `<audio>` players for Omeka files.
 
 ### Version History ###
 
+*2.3*
+
+* MediaElement.js 2.13.2
+* Added translation support for the player UI
+
 *2.2.1*
 
 * Fixed a notice bug when playing audio from 2.2
