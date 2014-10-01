@@ -77,7 +77,7 @@
     <p class="explanation">
     <?php
     echo __('Text files are data like subtitles and chapter names. '
-        . 'HTML5 Media wil include them as tracks of audio or video files with '
+        . 'HTML5 Media will include them as tracks of audio or video files with '
         . 'the same original filename on the same item.');
     ?>
     </p>
