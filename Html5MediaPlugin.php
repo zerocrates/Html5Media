@@ -167,7 +167,8 @@ class Html5MediaPlugin extends Omeka_Plugin_AbstractPlugin
                 'language' => substr(get_html_lang(), 0, 2),
                 'strings' => array(
                     'Download File' => __('Download File'),
-                    'Play/Pause' => __('Play/Pause'),
+                    'Play' => __('Play'),
+                    'Pause' => __('Pause'),
                     'Mute Toggle' => __('Mute Toggle'),
                     'Fullscreen' => __('Fullscreen'),
                     'Captions/Subtitles' => __('Captions/Subtitles'),
