@@ -3,66 +3,70 @@
 # This file is distributed under the GNU General Public License, v3.
 # 
 # Translators:
-# dewulfevy <evy.dewulf@libis.kuleuven.be>, 2013-2014
+# Evy De Wulf <evy.dewulf@libis.kuleuven.be>, 2013-2014
 msgid ""
 msgstr ""
 "Project-Id-Version: omeka-plugin-Html5Media\n"
 "Report-Msgid-Bugs-To: http://github.com/zerocrates/Html5Media/issues\n"
 "POT-Creation-Date: 2013-05-14 13:53-0500\n"
-"PO-Revision-Date: 2014-01-24 11:48+0000\n"
-"Last-Translator: dewulfevy <evy.dewulf@libis.kuleuven.be>\n"
-"Language-Team: Dutch (Belgium) (http://www.transifex.com/projects/p/omeka/language/nl_BE/)\n"
+"PO-Revision-Date: 2015-01-25 06:07+0000\n"
+"Last-Translator: John Flatness <john@zerocrates.org>\n"
+"Language-Team: Dutch (Belgium) (http://www.transifex.com/projects/p/omeka-plugin-html5media/language/nl_BE/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: nl_BE\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: Html5MediaPlugin.php:175
+#: Html5MediaPlugin.php:169
 msgid "Download File"
 msgstr "Download bestand"
 
-#: Html5MediaPlugin.php:176
-msgid "Play/Pause"
-msgstr "Speel af/Pauzeer"
+#: Html5MediaPlugin.php:170
+msgid "Play"
+msgstr "Speel af"
 
-#: Html5MediaPlugin.php:177
+#: Html5MediaPlugin.php:171
+msgid "Pause"
+msgstr "Pauzeer"
+
+#: Html5MediaPlugin.php:172
 msgid "Mute Toggle"
 msgstr "Schakelaar voor het dempen"
 
-#: Html5MediaPlugin.php:178
+#: Html5MediaPlugin.php:173
 msgid "Fullscreen"
 msgstr "Volledig scherm"
 
-#: Html5MediaPlugin.php:179
+#: Html5MediaPlugin.php:174
 msgid "Captions/Subtitles"
 msgstr "Hoofdingen/Ondertitels"
 
-#: Html5MediaPlugin.php:180
+#: Html5MediaPlugin.php:175
 msgid "None"
 msgstr "Niets"
 
-#: Html5MediaPlugin.php:181
+#: Html5MediaPlugin.php:176
 msgid "Turn off Fullscreen"
 msgstr "Zet volledig scherm af"
 
-#: Html5MediaPlugin.php:182
+#: Html5MediaPlugin.php:177
 msgid "Go Fullscreen"
 msgstr "Ga naar volledig scherm"
 
-#: Html5MediaPlugin.php:183
+#: Html5MediaPlugin.php:178
 msgid "Unmute"
 msgstr "Dempen uit"
 
-#: Html5MediaPlugin.php:184
+#: Html5MediaPlugin.php:179
 msgid "Mute"
 msgstr "Dempen"
 
-#: Html5MediaPlugin.php:185
+#: Html5MediaPlugin.php:180
 msgid "Download Video"
 msgstr "Download video"
 
-#: Html5MediaPlugin.php:186
+#: Html5MediaPlugin.php:181
 msgid "Close"
 msgstr "Sluiten"
 
@@ -98,7 +102,7 @@ msgstr "Tekstinstellingen"
 
 #: config-form.php:79
 msgid ""
-"Text files are data like subtitles and chapter names. HTML5 Media wil "
+"Text files are data like subtitles and chapter names. HTML5 Media will "
 "include them as tracks of audio or video files with the same original "
 "filename on the same item."
 msgstr "Tekstbestanden zijn gegevens zoals ondertitels en namen van hoofdstukken. HTML5 Media zal ze opnemen als tracks van audio- of video-bestanden met dezelfde originele bestandsnaam voor hetzelfde item."

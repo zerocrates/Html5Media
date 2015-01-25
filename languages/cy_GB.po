@@ -4,65 +4,70 @@
 # 
 # Translators:
 # sionengland <sne@llgc.org.uk>, 2014
+# sionengland <sne@llgc.org.uk>, 2014
 msgid ""
 msgstr ""
 "Project-Id-Version: omeka-plugin-Html5Media\n"
 "Report-Msgid-Bugs-To: http://github.com/zerocrates/Html5Media/issues\n"
 "POT-Creation-Date: 2013-05-14 13:53-0500\n"
-"PO-Revision-Date: 2014-01-22 12:49+0000\n"
-"Last-Translator: sionengland <sne@llgc.org.uk>\n"
-"Language-Team: Welsh (United Kingdom) (http://www.transifex.com/projects/p/omeka/language/cy_GB/)\n"
+"PO-Revision-Date: 2015-01-25 06:07+0000\n"
+"Last-Translator: John Flatness <john@zerocrates.org>\n"
+"Language-Team: Welsh (United Kingdom) (http://www.transifex.com/projects/p/omeka-plugin-html5media/language/cy_GB/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: cy_GB\n"
 "Plural-Forms: nplurals=4; plural=(n==1) ? 0 : (n==2) ? 1 : (n != 8 && n != 11) ? 2 : 3;\n"
 
-#: Html5MediaPlugin.php:175
+#: Html5MediaPlugin.php:169
 msgid "Download File"
 msgstr "Lawrlwytho Ffeil"
 
-#: Html5MediaPlugin.php:176
-msgid "Play/Pause"
-msgstr "Chwarae/Atal"
+#: Html5MediaPlugin.php:170
+msgid "Play"
+msgstr "Chwarae"
 
-#: Html5MediaPlugin.php:177
+#: Html5MediaPlugin.php:171
+msgid "Pause"
+msgstr "Atal"
+
+#: Html5MediaPlugin.php:172
 msgid "Mute Toggle"
 msgstr "Tawelu: ymlaen/i ffwrdd"
 
-#: Html5MediaPlugin.php:178
+#: Html5MediaPlugin.php:173
 msgid "Fullscreen"
 msgstr "Llond Sgrin"
 
-#: Html5MediaPlugin.php:179
+#: Html5MediaPlugin.php:174
 msgid "Captions/Subtitles"
 msgstr "Penawdau/Is-deitlau"
 
-#: Html5MediaPlugin.php:180
+#: Html5MediaPlugin.php:175
 msgid "None"
 msgstr "Dim"
 
-#: Html5MediaPlugin.php:181
+#: Html5MediaPlugin.php:176
 msgid "Turn off Fullscreen"
 msgstr "Troi Llond Sgrin i Ffwrdd"
 
-#: Html5MediaPlugin.php:182
+#: Html5MediaPlugin.php:177
 msgid "Go Fullscreen"
 msgstr "Llond Sgrin"
 
-#: Html5MediaPlugin.php:183
+#: Html5MediaPlugin.php:178
 msgid "Unmute"
 msgstr "Sain Ymlaen"
 
-#: Html5MediaPlugin.php:184
+#: Html5MediaPlugin.php:179
 msgid "Mute"
 msgstr "Tawelu"
 
-#: Html5MediaPlugin.php:185
+#: Html5MediaPlugin.php:180
 msgid "Download Video"
 msgstr "Lawrlwytho Fidio"
 
-#: Html5MediaPlugin.php:186
+#: Html5MediaPlugin.php:181
 msgid "Close"
 msgstr "Cau"
 
@@ -98,7 +103,7 @@ msgstr "Gosodiadau Testun"
 
 #: config-form.php:79
 msgid ""
-"Text files are data like subtitles and chapter names. HTML5 Media wil "
+"Text files are data like subtitles and chapter names. HTML5 Media will "
 "include them as tracks of audio or video files with the same original "
 "filename on the same item."
 msgstr "Mae feiliau testun fel is-deitlau a theitlau pennodau. Bydd HTML5 Media yn eu cynnwys fel traciau sain neu fidio gyda'r un enw ffeil a'r enw ffeil gwreiddiol yn yr un eitem."
