@@ -164,7 +164,7 @@ class Html5MediaPlugin extends Omeka_Plugin_AbstractPlugin
     {
         if (Zend_Registry::isRegistered('Zend_Translate')) {
             $l10n = array(
-                'language' => substr(get_html_lang(), 0, 2),
+                'language' => get_html_lang(),
                 'strings' => array(
                     'Download File' => __('Download File'),
                     'Play' => __('Play'),
