@@ -1,7 +1,7 @@
 <?php
 /**
  * @package Html5Media
- * @copyright Copyright 2012, John Flatness
+ * @copyright Copyright 2012-2015 John Flatness
  * @license http://www.gnu.org/licenses/gpl-3.0.txt GPLv3 or any later version
  */
 
@@ -43,7 +43,8 @@ class Html5MediaPlugin extends Omeka_Plugin_AbstractPlugin
                 'options' => array(
                     'autoplay' => false,
                     'controls' => true,
-                    'loop'     => false
+                    'loop'     => false,
+                    'preload'  => 'metadata',
                 )
             )
         );
@@ -67,6 +68,9 @@ class Html5MediaPlugin extends Omeka_Plugin_AbstractPlugin
         }
         if (version_compare($oldVersion, '2.2', '<')) {
             $settings['video']['options']['responsive'] = false;
+        }
+        if (version_compare($oldVersion, '2.5', '<')) {
+            $settings['common']['options']['preload'] = 'metadata';
         }
         set_option('html5_media_settings', serialize($settings));
     }
@@ -108,6 +112,8 @@ class Html5MediaPlugin extends Omeka_Plugin_AbstractPlugin
         $text = $settings['text'];
         $text['types'] = implode(',', $text['types']);
         $text['extensions'] = implode(',', $text['extensions']);
+
+        $common = $settings['common'];
         
         include 'config-form.php';
     }
@@ -131,6 +137,9 @@ class Html5MediaPlugin extends Omeka_Plugin_AbstractPlugin
         $text = $_POST['text'];
         $settings['text']['types'] = explode(',', $text['types']);
         $settings['text']['extensions'] = explode(',', $text['extensions']);
+
+        $common = $_POST['common'];
+        $settings['common']['options']['preload'] = $common['options']['preload'];
 
         set_option('html5_media_settings', serialize($settings));
     }
@@ -211,6 +220,9 @@ class Html5MediaPlugin extends Omeka_Plugin_AbstractPlugin
             $mediaOptions .= ' loop';
         if (isset($options['responsive']) && $options['responsive'])
             $mediaOptions .= ' style="width:100%;height:100%"';
+        if (isset($options['preload'])) {
+            $mediaOptions .= ' preload="' . html_escape($options['preload']). '"';
+        }
 
         $filename = html_escape($file->getWebPath('original'));
 

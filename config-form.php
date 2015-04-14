@@ -98,3 +98,23 @@
         </div>
     </div>
 </div>
+<div id="html5-media-common-settings">
+    <h2><?php echo __('Common Settings'); ?></h2>
+    <div class="field">
+        <div class="two columns alpha">
+            <?php echo $view->formLabel('common[options][preload]', __('Preload')); ?>
+        </div>
+        <div class="inputs five columns omega">
+            <?php
+            echo $view->formSelect('common[options][preload]',
+                $common['options']['preload'], array(),
+                array(
+                    'metadata'  => __('Metadata Only'),
+                    'auto'      => __('Entire Media'),
+                    'none'      => __('Disabled')
+                )
+            );
+            ?>
+        </div>
+    </div>
+</div>
