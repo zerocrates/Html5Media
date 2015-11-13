@@ -31,7 +31,7 @@ class Html5MediaPlugin extends Omeka_Plugin_AbstractPlugin
                 ),
                 'types' => array(
                     'audio/mpeg', 'audio/mp3', 'audio/wav', 'audio/m4a',
-                    'audio/wma'
+                    'audio/wma', 'audio/mp4'
                 ),
                 'extensions' => array('mp3', 'm4a', 'wav', 'wma'),
             ),
@@ -71,6 +71,11 @@ class Html5MediaPlugin extends Omeka_Plugin_AbstractPlugin
         }
         if (version_compare($oldVersion, '2.5', '<')) {
             $settings['common']['options']['preload'] = 'metadata';
+        }
+        if (version_compare($oldVersion, '2.6', '<')) {
+            if(!in_array('audio/mp4', $settings['audio']['types'])) {
+                $settings['audio']['types'][] = 'audio/mp4';
+            }
         }
         set_option('html5_media_settings', serialize($settings));
     }
