@@ -3,106 +3,106 @@
 # This file is distributed under the GNU General Public License, v3.
 # 
 # Translators:
-# mustafaulu@msn.com <Mustafaulu@msn.com>, 2014
+# Rivo Zängov <eraser@eraser.ee>, 2015
 msgid ""
 msgstr ""
 "Project-Id-Version: omeka-plugin-Html5Media\n"
 "Report-Msgid-Bugs-To: http://github.com/zerocrates/Html5Media/issues\n"
 "POT-Creation-Date: 2013-05-14 13:53-0500\n"
-"PO-Revision-Date: 2015-01-25 06:07+0000\n"
-"Last-Translator: John Flatness <john@zerocrates.org>\n"
-"Language-Team: Turkish (Turkey) (http://www.transifex.com/omeka/omeka-plugin-html5media/language/tr_TR/)\n"
+"PO-Revision-Date: 2015-08-13 18:58+0000\n"
+"Last-Translator: Rivo Zängov <eraser@eraser.ee>\n"
+"Language-Team: Estonian (http://www.transifex.com/omeka/omeka-plugin-html5media/language/et/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: tr_TR\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
+"Language: et\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: Html5MediaPlugin.php:169
 msgid "Download File"
-msgstr "İndir"
+msgstr "Laadi fail alla"
 
 #: Html5MediaPlugin.php:170
 msgid "Play"
-msgstr "Oynat"
+msgstr "Esita"
 
 #: Html5MediaPlugin.php:171
 msgid "Pause"
-msgstr "Duraklat"
+msgstr "Peata"
 
 #: Html5MediaPlugin.php:172
 msgid "Mute Toggle"
-msgstr "Sessiz Düğmesi"
+msgstr "Heli sees/väljas"
 
 #: Html5MediaPlugin.php:173
 msgid "Fullscreen"
-msgstr "Tam Ekran"
+msgstr "Täisekraanil"
 
 #: Html5MediaPlugin.php:174
 msgid "Captions/Subtitles"
-msgstr "Başlıklar/Altyazılar"
+msgstr "Subtiitrid"
 
 #: Html5MediaPlugin.php:175
 msgid "None"
-msgstr "Hiçbiri"
+msgstr "Pole"
 
 #: Html5MediaPlugin.php:176
 msgid "Turn off Fullscreen"
-msgstr "Tam Ekranı Kapat"
+msgstr "Välju täisekraanist"
 
 #: Html5MediaPlugin.php:177
 msgid "Go Fullscreen"
-msgstr "Tam Ekran Yap"
+msgstr "Mine täisekraanile"
 
 #: Html5MediaPlugin.php:178
 msgid "Unmute"
-msgstr "Sesi Aç"
+msgstr "Heli sisse"
 
 #: Html5MediaPlugin.php:179
 msgid "Mute"
-msgstr "Sesi Kapat"
+msgstr "Heli välja"
 
 #: Html5MediaPlugin.php:180
 msgid "Download Video"
-msgstr "Videoyu İndir"
+msgstr "Laadi video alla"
 
 #: Html5MediaPlugin.php:181
 msgid "Close"
-msgstr "Kapat"
+msgstr "Sulge"
 
 #: config-form.php:3
 msgid "Video Settings"
-msgstr "Video Ayarları"
+msgstr "Video seaded"
 
 #: config-form.php:22
 msgid "Responsive Sizing"
-msgstr "Hassas Boyutlandırma"
+msgstr "Suuruse muutmine"
 
 #: config-form.php:26
 msgid ""
 "Check the box below to allow the video player to automatically match its "
 "size to its container."
-msgstr "Video Oynatınının dosya boyutunu dosya taşıyıcısı ile otomatik olarak eşleştirmesi için aşağıdaki kutuyu işaretleyiniz."
+msgstr "Märgi see kast, et lubada videopleieri suuruse automaatne muutmine vavstavalt ekraani suurusele."
 
 #: config-form.php:33 config-form.php:60 config-form.php:86
 msgid "MIME Types"
-msgstr "MIME Türleri"
+msgstr "MIME tüübid"
 
 #: config-form.php:41 config-form.php:68 config-form.php:94
 msgid "Extensions"
-msgstr "Uzantılar"
+msgstr "Faililaiendid"
 
 #: config-form.php:49
 msgid "Audio Settings"
-msgstr "Ses Ayarları"
+msgstr "Heli seaded"
 
 #: config-form.php:76
 msgid "Text Settings"
-msgstr "Yazı Ayarları"
+msgstr "Teksti seaded"
 
 #: config-form.php:79
 msgid ""
 "Text files are data like subtitles and chapter names. HTML5 Media will "
 "include them as tracks of audio or video files with the same original "
 "filename on the same item."
-msgstr "Yazı dosyaları altyazı ve bölüm isimleri gibi verilerdir. HTML5 Medya aynı dosyada orijinal dosya adları ile birlikte ses ya da video dosya yolları olarak bunları içerecektir."
+msgstr "Tekstifailid nagu näiteks subtiitrid või peatükkide nimed. HTML5 Media kaasab need heli või videoga, kui nende failinimed on samad."

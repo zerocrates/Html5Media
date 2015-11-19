@@ -3,15 +3,15 @@
 # This file is distributed under the GNU General Public License, v3.
 # 
 # Translators:
-# Roland Keck <roland.keck@web.de>, 2014
+# Roland Keck <roland.keck@web.de>, 2014-2015
 msgid ""
 msgstr ""
 "Project-Id-Version: omeka-plugin-Html5Media\n"
 "Report-Msgid-Bugs-To: http://github.com/zerocrates/Html5Media/issues\n"
 "POT-Creation-Date: 2013-05-14 13:53-0500\n"
-"PO-Revision-Date: 2015-01-25 06:07+0000\n"
-"Last-Translator: John Flatness <john@zerocrates.org>\n"
-"Language-Team: German (Germany) (http://www.transifex.com/projects/p/omeka-plugin-html5media/language/de_DE/)\n"
+"PO-Revision-Date: 2015-02-26 08:29+0000\n"
+"Last-Translator: Roland Keck <roland.keck@web.de>\n"
+"Language-Team: German (Germany) (http://www.transifex.com/omeka/omeka-plugin-html5media/language/de_DE/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -24,11 +24,11 @@ msgstr "Datei herunterladen"
 
 #: Html5MediaPlugin.php:170
 msgid "Play"
-msgstr ""
+msgstr "Spielen"
 
 #: Html5MediaPlugin.php:171
 msgid "Pause"
-msgstr ""
+msgstr "Pause"
 
 #: Html5MediaPlugin.php:172
 msgid "Mute Toggle"

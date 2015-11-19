@@ -4,16 +4,16 @@
 # 
 # Translators:
 # Jan Černý <cernyhonza@gmail.com>, 2013
-# Jiří Vírava <appukonrad@gmail.com>, 2014
+# Jiří Vírava <appukonrad@gmail.com>, 2014-2015
 # MICHAL D. <black23@gmail.com>, 2013
 msgid ""
 msgstr ""
 "Project-Id-Version: omeka-plugin-Html5Media\n"
 "Report-Msgid-Bugs-To: http://github.com/zerocrates/Html5Media/issues\n"
 "POT-Creation-Date: 2013-05-14 13:53-0500\n"
-"PO-Revision-Date: 2015-01-25 06:07+0000\n"
-"Last-Translator: John Flatness <john@zerocrates.org>\n"
-"Language-Team: Czech (http://www.transifex.com/projects/p/omeka-plugin-html5media/language/cs/)\n"
+"PO-Revision-Date: 2015-08-12 07:42+0000\n"
+"Last-Translator: Jiří Vírava <appukonrad@gmail.com>\n"
+"Language-Team: Czech (http://www.transifex.com/omeka/omeka-plugin-html5media/language/cs/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -34,7 +34,7 @@ msgstr "Pozastavit"
 
 #: Html5MediaPlugin.php:172
 msgid "Mute Toggle"
-msgstr ""
+msgstr "Přepnout ztlumení"
 
 #: Html5MediaPlugin.php:173
 msgid "Fullscreen"
@@ -42,11 +42,11 @@ msgstr "Celá obrazovka"
 
 #: Html5MediaPlugin.php:174
 msgid "Captions/Subtitles"
-msgstr ""
+msgstr "Popisky/Titulky"
 
 #: Html5MediaPlugin.php:175
 msgid "None"
-msgstr ""
+msgstr "Žádné"
 
 #: Html5MediaPlugin.php:176
 msgid "Turn off Fullscreen"

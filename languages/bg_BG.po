@@ -3,106 +3,106 @@
 # This file is distributed under the GNU General Public License, v3.
 # 
 # Translators:
-# mustafaulu@msn.com <Mustafaulu@msn.com>, 2014
+# Gabriel Radev <gabosss@gmail.com>, 2015
 msgid ""
 msgstr ""
 "Project-Id-Version: omeka-plugin-Html5Media\n"
 "Report-Msgid-Bugs-To: http://github.com/zerocrates/Html5Media/issues\n"
 "POT-Creation-Date: 2013-05-14 13:53-0500\n"
-"PO-Revision-Date: 2015-01-25 06:07+0000\n"
-"Last-Translator: John Flatness <john@zerocrates.org>\n"
-"Language-Team: Turkish (Turkey) (http://www.transifex.com/omeka/omeka-plugin-html5media/language/tr_TR/)\n"
+"PO-Revision-Date: 2015-03-12 22:14+0000\n"
+"Last-Translator: Gabriel Radev <gabosss@gmail.com>\n"
+"Language-Team: Bulgarian (Bulgaria) (http://www.transifex.com/omeka/omeka-plugin-html5media/language/bg_BG/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: tr_TR\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
+"Language: bg_BG\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: Html5MediaPlugin.php:169
 msgid "Download File"
-msgstr "İndir"
+msgstr "Пауза"
 
 #: Html5MediaPlugin.php:170
 msgid "Play"
-msgstr "Oynat"
+msgstr "Старт"
 
 #: Html5MediaPlugin.php:171
 msgid "Pause"
-msgstr "Duraklat"
+msgstr "Пауза"
 
 #: Html5MediaPlugin.php:172
 msgid "Mute Toggle"
-msgstr "Sessiz Düğmesi"
+msgstr "Превключване без звук"
 
 #: Html5MediaPlugin.php:173
 msgid "Fullscreen"
-msgstr "Tam Ekran"
+msgstr "На цял екран"
 
 #: Html5MediaPlugin.php:174
 msgid "Captions/Subtitles"
-msgstr "Başlıklar/Altyazılar"
+msgstr "Надписи / субтитри"
 
 #: Html5MediaPlugin.php:175
 msgid "None"
-msgstr "Hiçbiri"
+msgstr "Нищо"
 
 #: Html5MediaPlugin.php:176
 msgid "Turn off Fullscreen"
-msgstr "Tam Ekranı Kapat"
+msgstr "Изключване на Цял екран"
 
 #: Html5MediaPlugin.php:177
 msgid "Go Fullscreen"
-msgstr "Tam Ekran Yap"
+msgstr "Включи Цял екран"
 
 #: Html5MediaPlugin.php:178
 msgid "Unmute"
-msgstr "Sesi Aç"
+msgstr "Със звук"
 
 #: Html5MediaPlugin.php:179
 msgid "Mute"
-msgstr "Sesi Kapat"
+msgstr "Без звук"
 
 #: Html5MediaPlugin.php:180
 msgid "Download Video"
-msgstr "Videoyu İndir"
+msgstr "Изтегляне на видео"
 
 #: Html5MediaPlugin.php:181
 msgid "Close"
-msgstr "Kapat"
+msgstr "Затваряне"
 
 #: config-form.php:3
 msgid "Video Settings"
-msgstr "Video Ayarları"
+msgstr "Настройки на Видео"
 
 #: config-form.php:22
 msgid "Responsive Sizing"
-msgstr "Hassas Boyutlandırma"
+msgstr "Динамично оразмеряване"
 
 #: config-form.php:26
 msgid ""
 "Check the box below to allow the video player to automatically match its "
 "size to its container."
-msgstr "Video Oynatınının dosya boyutunu dosya taşıyıcısı ile otomatik olarak eşleştirmesi için aşağıdaki kutuyu işaretleyiniz."
+msgstr "Поставете отметка в квадратчето по-долу, за да се даде възможност на видео плейъра за да пресметне автоматично до нужния размер."
 
 #: config-form.php:33 config-form.php:60 config-form.php:86
 msgid "MIME Types"
-msgstr "MIME Türleri"
+msgstr "Видове MIME"
 
 #: config-form.php:41 config-form.php:68 config-form.php:94
 msgid "Extensions"
-msgstr "Uzantılar"
+msgstr "Разширения"
 
 #: config-form.php:49
 msgid "Audio Settings"
-msgstr "Ses Ayarları"
+msgstr "Настройки на звука"
 
 #: config-form.php:76
 msgid "Text Settings"
-msgstr "Yazı Ayarları"
+msgstr "Настройки на текста"
 
 #: config-form.php:79
 msgid ""
 "Text files are data like subtitles and chapter names. HTML5 Media will "
 "include them as tracks of audio or video files with the same original "
 "filename on the same item."
-msgstr "Yazı dosyaları altyazı ve bölüm isimleri gibi verilerdir. HTML5 Medya aynı dosyada orijinal dosya adları ile birlikte ses ya da video dosya yolları olarak bunları içerecektir."
+msgstr "Текстови файлове са данни, както субтитрите и заглавията. HTML5 Media ще ги включи като пътечки към аудио или видео файловете със същия оригинален файла в един и същи документ"
