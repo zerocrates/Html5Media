@@ -71,8 +71,6 @@ class Html5MediaPlugin extends Omeka_Plugin_AbstractPlugin
         }
         if (version_compare($oldVersion, '2.5', '<')) {
             $settings['common']['options']['preload'] = 'metadata';
-        }
-        if (version_compare($oldVersion, '2.6', '<')) {
             if(!in_array('audio/mp4', $settings['audio']['types'])) {
                 $settings['audio']['types'][] = 'audio/mp4';
             }
