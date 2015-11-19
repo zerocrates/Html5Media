@@ -30,8 +30,8 @@ class Html5MediaPlugin extends Omeka_Plugin_AbstractPlugin
                     'width' => 400
                 ),
                 'types' => array(
-                    'audio/mpeg', 'audio/mp3', 'audio/wav', 'audio/m4a',
-                    'audio/wma', 'audio/mp4'
+                    'audio/mpeg', 'audio/mp3', 'audio/wav', 'audio/x-wav',
+                    'audio/m4a', 'audio/wma', 'audio/mp4'
                 ),
                 'extensions' => array('mp3', 'm4a', 'wav', 'wma'),
             ),
@@ -73,6 +73,9 @@ class Html5MediaPlugin extends Omeka_Plugin_AbstractPlugin
             $settings['common']['options']['preload'] = 'metadata';
             if(!in_array('audio/mp4', $settings['audio']['types'])) {
                 $settings['audio']['types'][] = 'audio/mp4';
+            }
+            if (!in_array('audio/x-wav', $settings['audio']['types'])) {
+                $settings['audio']['types'][] = 'audio/x-wav';
             }
         }
         set_option('html5_media_settings', serialize($settings));
