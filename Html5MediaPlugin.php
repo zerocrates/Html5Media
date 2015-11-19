@@ -201,6 +201,7 @@ class Html5MediaPlugin extends Omeka_Plugin_AbstractPlugin
 
         queue_js_file('mediaelement-and-player.min', 'mediaelement');
         queue_css_file('mediaelementplayer', 'all', false, 'mediaelement');
+        queue_css_file('html5media', 'all');
         if (is_admin_theme()) {
             queue_css_file('html5media-mejs-overrides', 'all');
         }
@@ -211,6 +212,7 @@ class Html5MediaPlugin extends Omeka_Plugin_AbstractPlugin
         static $i = 0;
         $i++;
 
+        $class = "html5media-player $type";
         $mediaOptions = '';
 
         if (isset($options['width']))
@@ -223,8 +225,10 @@ class Html5MediaPlugin extends Omeka_Plugin_AbstractPlugin
             $mediaOptions .= ' controls';
         if (isset($options['loop']) && $options['loop'])
             $mediaOptions .= ' loop';
-        if (isset($options['responsive']) && $options['responsive'])
+        if (isset($options['responsive']) && $options['responsive']) {
             $mediaOptions .= ' style="width:100%;height:100%"';
+            $class .= ' responsive';
+        }
         if (isset($options['preload'])) {
             $mediaOptions .= ' preload="' . html_escape($options['preload']). '"';
         }
@@ -257,9 +261,11 @@ class Html5MediaPlugin extends Omeka_Plugin_AbstractPlugin
         }
 
         return <<<HTML
+<div class="$class">
 <$type id="html5-media-$i" src="$filename"$mediaOptions>
 $tracks
 </$type>
+</div>
 <script type="text/javascript">
 jQuery('#html5-media-$i').mediaelementplayer();
 </script>
