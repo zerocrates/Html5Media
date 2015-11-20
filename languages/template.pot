@@ -17,55 +17,55 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: Html5MediaPlugin.php:181
+#: Html5MediaPlugin.php:189
 msgid "Download File"
 msgstr ""
 
-#: Html5MediaPlugin.php:182
+#: Html5MediaPlugin.php:190
 msgid "Play"
 msgstr ""
 
-#: Html5MediaPlugin.php:183
+#: Html5MediaPlugin.php:191
 msgid "Pause"
 msgstr ""
 
-#: Html5MediaPlugin.php:184
+#: Html5MediaPlugin.php:192
 msgid "Mute Toggle"
 msgstr ""
 
-#: Html5MediaPlugin.php:185
+#: Html5MediaPlugin.php:193
 msgid "Fullscreen"
 msgstr ""
 
-#: Html5MediaPlugin.php:186
+#: Html5MediaPlugin.php:194
 msgid "Captions/Subtitles"
 msgstr ""
 
-#: Html5MediaPlugin.php:187
+#: Html5MediaPlugin.php:195
 msgid "None"
 msgstr ""
 
-#: Html5MediaPlugin.php:188
+#: Html5MediaPlugin.php:196
 msgid "Turn off Fullscreen"
 msgstr ""
 
-#: Html5MediaPlugin.php:189
+#: Html5MediaPlugin.php:197
 msgid "Go Fullscreen"
 msgstr ""
 
-#: Html5MediaPlugin.php:190
+#: Html5MediaPlugin.php:198
 msgid "Unmute"
 msgstr ""
 
-#: Html5MediaPlugin.php:191
+#: Html5MediaPlugin.php:199
 msgid "Mute"
 msgstr ""
 
-#: Html5MediaPlugin.php:192
+#: Html5MediaPlugin.php:200
 msgid "Download Video"
 msgstr ""
 
-#: Html5MediaPlugin.php:193
+#: Html5MediaPlugin.php:201
 msgid "Close"
 msgstr ""
 
@@ -73,7 +73,7 @@ msgstr ""
 msgid "Video Settings"
 msgstr ""
 
-#: config-form.php:22
+#: config-form.php:22 config-form.php:60
 msgid "Responsive Sizing"
 msgstr ""
 
@@ -83,11 +83,11 @@ msgid ""
 "size to its container."
 msgstr ""
 
-#: config-form.php:33 config-form.php:60 config-form.php:86
+#: config-form.php:33 config-form.php:71 config-form.php:97
 msgid "MIME Types"
 msgstr ""
 
-#: config-form.php:41 config-form.php:68 config-form.php:94
+#: config-form.php:41 config-form.php:79 config-form.php:105
 msgid "Extensions"
 msgstr ""
 
@@ -95,33 +95,39 @@ msgstr ""
 msgid "Audio Settings"
 msgstr ""
 
-#: config-form.php:76
+#: config-form.php:64
+msgid ""
+"Check the box below to allow the audio player to automatically match its "
+"width to its container."
+msgstr ""
+
+#: config-form.php:87
 msgid "Text Settings"
 msgstr ""
 
-#: config-form.php:79
+#: config-form.php:90
 msgid ""
 "Text files are data like subtitles and chapter names. HTML5 Media will "
 "include them as tracks of audio or video files with the same original "
 "filename on the same item."
 msgstr ""
 
-#: config-form.php:102
+#: config-form.php:113
 msgid "Common Settings"
 msgstr ""
 
-#: config-form.php:105
+#: config-form.php:116
 msgid "Preload"
 msgstr ""
 
-#: config-form.php:112
+#: config-form.php:123
 msgid "Metadata Only"
 msgstr ""
 
-#: config-form.php:113
+#: config-form.php:124
 msgid "Entire Media"
 msgstr ""
 
-#: config-form.php:114
+#: config-form.php:125
 msgid "Disabled"
 msgstr ""
