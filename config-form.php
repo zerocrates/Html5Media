@@ -57,6 +57,17 @@
     </div>
     <div class="field">
         <div class="two columns alpha">
+            <?php echo $view->formLabel('audio[options][responsive]', __('Responsive Sizing')); ?>
+        </div>
+        <div class="inputs five columns omega">
+            <p class="explanation">
+                <?php echo __('Check the box below to allow the audio player to automatically match its width to its container.'); ?>
+            </p>
+            <?php echo $view->formCheckbox('audio[options][responsive]', null, array('checked' => $audio['options']['responsive'])); ?>
+        </div>
+    </div>
+    <div class="field">
+        <div class="two columns alpha">
             <?php echo $view->formLabel('audio[types]', __('MIME Types')); ?>
         </div>
         <div class="inputs five columns omega">

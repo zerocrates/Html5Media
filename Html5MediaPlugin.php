@@ -27,7 +27,8 @@ class Html5MediaPlugin extends Omeka_Plugin_AbstractPlugin
             ),
             'audio' => array(
                 'options' => array(
-                    'width' => 400
+                    'width' => 400,
+                    'responsive' => false
                 ),
                 'types' => array(
                     'audio/mpeg', 'audio/mp3', 'audio/wav', 'audio/x-wav',
@@ -77,6 +78,9 @@ class Html5MediaPlugin extends Omeka_Plugin_AbstractPlugin
             if (!in_array('audio/x-wav', $settings['audio']['types'])) {
                 $settings['audio']['types'][] = 'audio/x-wav';
             }
+        }
+        if (version_compare($oldVersion, '2.6', '<')) {
+            $settings['audio']['options']['responsive'] = false;
         }
         set_option('html5_media_settings', serialize($settings));
     }
@@ -130,6 +134,7 @@ class Html5MediaPlugin extends Omeka_Plugin_AbstractPlugin
         
         $audio = $_POST['audio'];
         $settings['audio']['options']['width'] = (int) $audio['options']['width'];
+        $settings['audio']['options']['responsive'] = (bool) $audio['options']['responsive'];
         $settings['audio']['types'] = explode(',', $audio['types']);
         $settings['audio']['extensions'] = explode(',', $audio['extensions']);
 
