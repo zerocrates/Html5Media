@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: omeka-plugin-Html5Media\n"
 "Report-Msgid-Bugs-To: http://github.com/zerocrates/Html5Media/issues\n"
 "POT-Creation-Date: 2013-05-14 13:53-0500\n"
-"PO-Revision-Date: 2015-01-25 06:07+0000\n"
+"PO-Revision-Date: 2015-11-20 00:42+0000\n"
 "Last-Translator: John Flatness <john@zerocrates.org>\n"
 "Language-Team: Chinese (Taiwan) (http://www.transifex.com/omeka/omeka-plugin-html5media/language/zh_TW/)\n"
 "MIME-Version: 1.0\n"
@@ -18,55 +18,55 @@ msgstr ""
 "Language: zh_TW\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
-#: Html5MediaPlugin.php:169
+#: Html5MediaPlugin.php:189
 msgid "Download File"
 msgstr "下載檔案"
 
-#: Html5MediaPlugin.php:170
+#: Html5MediaPlugin.php:190
 msgid "Play"
 msgstr "播放"
 
-#: Html5MediaPlugin.php:171
+#: Html5MediaPlugin.php:191
 msgid "Pause"
 msgstr "暫停"
 
-#: Html5MediaPlugin.php:172
+#: Html5MediaPlugin.php:192
 msgid "Mute Toggle"
 msgstr "靜音開關"
 
-#: Html5MediaPlugin.php:173
+#: Html5MediaPlugin.php:193
 msgid "Fullscreen"
 msgstr "全螢幕"
 
-#: Html5MediaPlugin.php:174
+#: Html5MediaPlugin.php:194
 msgid "Captions/Subtitles"
 msgstr "標題/字幕"
 
-#: Html5MediaPlugin.php:175
+#: Html5MediaPlugin.php:195
 msgid "None"
 msgstr "沒有"
 
-#: Html5MediaPlugin.php:176
+#: Html5MediaPlugin.php:196
 msgid "Turn off Fullscreen"
 msgstr "關閉全螢幕"
 
-#: Html5MediaPlugin.php:177
+#: Html5MediaPlugin.php:197
 msgid "Go Fullscreen"
 msgstr "啟動全螢幕"
 
-#: Html5MediaPlugin.php:178
+#: Html5MediaPlugin.php:198
 msgid "Unmute"
 msgstr "非靜音"
 
-#: Html5MediaPlugin.php:179
+#: Html5MediaPlugin.php:199
 msgid "Mute"
 msgstr "靜音"
 
-#: Html5MediaPlugin.php:180
+#: Html5MediaPlugin.php:200
 msgid "Download Video"
 msgstr "下載視訊"
 
-#: Html5MediaPlugin.php:181
+#: Html5MediaPlugin.php:201
 msgid "Close"
 msgstr "關閉"
 
@@ -74,7 +74,7 @@ msgstr "關閉"
 msgid "Video Settings"
 msgstr "視訊設定"
 
-#: config-form.php:22
+#: config-form.php:22 config-form.php:60
 msgid "Responsive Sizing"
 msgstr "感應調整尺寸"
 
@@ -84,11 +84,11 @@ msgid ""
 "size to its container."
 msgstr "勾選以下的核定框將允許視訊播放器自動調整尺寸以符合它的容器。"
 
-#: config-form.php:33 config-form.php:60 config-form.php:86
+#: config-form.php:33 config-form.php:71 config-form.php:97
 msgid "MIME Types"
 msgstr "MIME類型"
 
-#: config-form.php:41 config-form.php:68 config-form.php:94
+#: config-form.php:41 config-form.php:79 config-form.php:105
 msgid "Extensions"
 msgstr "副檔名"
 
@@ -96,13 +96,39 @@ msgstr "副檔名"
 msgid "Audio Settings"
 msgstr "聲音設定"
 
-#: config-form.php:76
+#: config-form.php:64
+msgid ""
+"Check the box below to allow the audio player to automatically match its "
+"width to its container."
+msgstr ""
+
+#: config-form.php:87
 msgid "Text Settings"
 msgstr "文本設定"
 
-#: config-form.php:79
+#: config-form.php:90
 msgid ""
 "Text files are data like subtitles and chapter names. HTML5 Media will "
 "include them as tracks of audio or video files with the same original "
 "filename on the same item."
 msgstr "文本檔案像是字幕或是標題。若在相同單件內，與聲音或視訊檔案的原件檔名相同，HTML5 Media也會包含它們。"
+
+#: config-form.php:113
+msgid "Common Settings"
+msgstr ""
+
+#: config-form.php:116
+msgid "Preload"
+msgstr ""
+
+#: config-form.php:123
+msgid "Metadata Only"
+msgstr ""
+
+#: config-form.php:124
+msgid "Entire Media"
+msgstr ""
+
+#: config-form.php:125
+msgid "Disabled"
+msgstr ""

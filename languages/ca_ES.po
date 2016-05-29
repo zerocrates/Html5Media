@@ -3,13 +3,13 @@
 # This file is distributed under the GNU General Public License, v3.
 # 
 # Translators:
-# Rubén Alcaraz Martínez <rubenalcarazmartinez@gmail.com>, 2013-2014
+# Rubén Alcaraz Martínez <rubenalcarazmartinez@gmail.com>, 2013-2014,2016
 msgid ""
 msgstr ""
 "Project-Id-Version: omeka-plugin-Html5Media\n"
 "Report-Msgid-Bugs-To: http://github.com/zerocrates/Html5Media/issues\n"
 "POT-Creation-Date: 2013-05-14 13:53-0500\n"
-"PO-Revision-Date: 2015-03-11 08:53+0000\n"
+"PO-Revision-Date: 2016-03-11 09:54+0000\n"
 "Last-Translator: Rubén Alcaraz Martínez <rubenalcarazmartinez@gmail.com>\n"
 "Language-Team: Catalan (Spain) (http://www.transifex.com/omeka/omeka-plugin-html5media/language/ca_ES/)\n"
 "MIME-Version: 1.0\n"
@@ -18,55 +18,55 @@ msgstr ""
 "Language: ca_ES\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: Html5MediaPlugin.php:169
+#: Html5MediaPlugin.php:189
 msgid "Download File"
 msgstr "Descarrega el fitxer"
 
-#: Html5MediaPlugin.php:170
+#: Html5MediaPlugin.php:190
 msgid "Play"
 msgstr "Reproduir"
 
-#: Html5MediaPlugin.php:171
+#: Html5MediaPlugin.php:191
 msgid "Pause"
 msgstr "Pausa"
 
-#: Html5MediaPlugin.php:172
+#: Html5MediaPlugin.php:192
 msgid "Mute Toggle"
 msgstr "Activa el silenci"
 
-#: Html5MediaPlugin.php:173
+#: Html5MediaPlugin.php:193
 msgid "Fullscreen"
 msgstr "Pantalla completa"
 
-#: Html5MediaPlugin.php:174
+#: Html5MediaPlugin.php:194
 msgid "Captions/Subtitles"
 msgstr "Subtítols"
 
-#: Html5MediaPlugin.php:175
+#: Html5MediaPlugin.php:195
 msgid "None"
 msgstr "Cap"
 
-#: Html5MediaPlugin.php:176
+#: Html5MediaPlugin.php:196
 msgid "Turn off Fullscreen"
 msgstr "Desactiva la pantalla completa"
 
-#: Html5MediaPlugin.php:177
+#: Html5MediaPlugin.php:197
 msgid "Go Fullscreen"
 msgstr "Pantalla completa"
 
-#: Html5MediaPlugin.php:178
+#: Html5MediaPlugin.php:198
 msgid "Unmute"
 msgstr "Activa el so"
 
-#: Html5MediaPlugin.php:179
+#: Html5MediaPlugin.php:199
 msgid "Mute"
 msgstr "Desactiva el so"
 
-#: Html5MediaPlugin.php:180
+#: Html5MediaPlugin.php:200
 msgid "Download Video"
 msgstr "Descarrega el vídeo"
 
-#: Html5MediaPlugin.php:181
+#: Html5MediaPlugin.php:201
 msgid "Close"
 msgstr "Tanca"
 
@@ -74,7 +74,7 @@ msgstr "Tanca"
 msgid "Video Settings"
 msgstr "Paràmetres del vídeo"
 
-#: config-form.php:22
+#: config-form.php:22 config-form.php:60
 msgid "Responsive Sizing"
 msgstr "Mida adaptativa"
 
@@ -84,11 +84,11 @@ msgid ""
 "size to its container."
 msgstr "Marqueu la casella per permetre que el reproductor de vídeo coincideixi automàticament amb la mida del seu contenidor."
 
-#: config-form.php:33 config-form.php:60 config-form.php:86
+#: config-form.php:33 config-form.php:71 config-form.php:97
 msgid "MIME Types"
 msgstr "Extensions MIME"
 
-#: config-form.php:41 config-form.php:68 config-form.php:94
+#: config-form.php:41 config-form.php:79 config-form.php:105
 msgid "Extensions"
 msgstr "Extensions"
 
@@ -96,13 +96,39 @@ msgstr "Extensions"
 msgid "Audio Settings"
 msgstr "Paràmetres de l'àudio"
 
-#: config-form.php:76
+#: config-form.php:64
+msgid ""
+"Check the box below to allow the audio player to automatically match its "
+"width to its container."
+msgstr "Marqueu la casella per permetre que el reproductor d'àudio coincideixi automàticament amb la mida del seu contenidor."
+
+#: config-form.php:87
 msgid "Text Settings"
 msgstr "Paràmetres del text"
 
-#: config-form.php:79
+#: config-form.php:90
 msgid ""
 "Text files are data like subtitles and chapter names. HTML5 Media will "
 "include them as tracks of audio or video files with the same original "
 "filename on the same item."
 msgstr "Els fitxers de text són dades com subtítols o noms dels capítols. HTML5 Media els pot incloure com pistes d'àudio o fitxers de vídeo amb el mateix nom de fitxer original en el mateix ítem."
+
+#: config-form.php:113
+msgid "Common Settings"
+msgstr "Paràmetres comuns"
+
+#: config-form.php:116
+msgid "Preload"
+msgstr "Pre-càrrega"
+
+#: config-form.php:123
+msgid "Metadata Only"
+msgstr "Només metadades"
+
+#: config-form.php:124
+msgid "Entire Media"
+msgstr "Tot l'element multimèdia"
+
+#: config-form.php:125
+msgid "Disabled"
+msgstr "Desactivat"

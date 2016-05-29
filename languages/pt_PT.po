@@ -3,13 +3,13 @@
 # This file is distributed under the GNU General Public License, v3.
 # 
 # Translators:
-# Daniel Alves <daniel_r_alves@hotmail.com>, 2014
+# Daniel Alves <daniel_r_alves@hotmail.com>, 2014,2016
 msgid ""
 msgstr ""
 "Project-Id-Version: omeka-plugin-Html5Media\n"
 "Report-Msgid-Bugs-To: http://github.com/zerocrates/Html5Media/issues\n"
 "POT-Creation-Date: 2013-05-14 13:53-0500\n"
-"PO-Revision-Date: 2015-03-11 11:01+0000\n"
+"PO-Revision-Date: 2016-01-13 02:32+0000\n"
 "Last-Translator: Daniel Alves <daniel_r_alves@hotmail.com>\n"
 "Language-Team: Portuguese (Portugal) (http://www.transifex.com/omeka/omeka-plugin-html5media/language/pt_PT/)\n"
 "MIME-Version: 1.0\n"
@@ -18,55 +18,55 @@ msgstr ""
 "Language: pt_PT\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: Html5MediaPlugin.php:169
+#: Html5MediaPlugin.php:189
 msgid "Download File"
 msgstr "Transferir ficheiro"
 
-#: Html5MediaPlugin.php:170
+#: Html5MediaPlugin.php:190
 msgid "Play"
 msgstr "Iniciar"
 
-#: Html5MediaPlugin.php:171
+#: Html5MediaPlugin.php:191
 msgid "Pause"
 msgstr "Pausa"
 
-#: Html5MediaPlugin.php:172
+#: Html5MediaPlugin.php:192
 msgid "Mute Toggle"
 msgstr "Alternar sem som"
 
-#: Html5MediaPlugin.php:173
+#: Html5MediaPlugin.php:193
 msgid "Fullscreen"
 msgstr "Ecrã inteiro"
 
-#: Html5MediaPlugin.php:174
+#: Html5MediaPlugin.php:194
 msgid "Captions/Subtitles"
 msgstr "Legendas ocultas / Legendas"
 
-#: Html5MediaPlugin.php:175
+#: Html5MediaPlugin.php:195
 msgid "None"
 msgstr "Nenhuma"
 
-#: Html5MediaPlugin.php:176
+#: Html5MediaPlugin.php:196
 msgid "Turn off Fullscreen"
 msgstr "Sair de Ecrã Inteiro"
 
-#: Html5MediaPlugin.php:177
+#: Html5MediaPlugin.php:197
 msgid "Go Fullscreen"
 msgstr "Ir para Ecrã Inteiro"
 
-#: Html5MediaPlugin.php:178
+#: Html5MediaPlugin.php:198
 msgid "Unmute"
 msgstr "Com som"
 
-#: Html5MediaPlugin.php:179
+#: Html5MediaPlugin.php:199
 msgid "Mute"
 msgstr "Sem som"
 
-#: Html5MediaPlugin.php:180
+#: Html5MediaPlugin.php:200
 msgid "Download Video"
 msgstr "Transferir vídeo"
 
-#: Html5MediaPlugin.php:181
+#: Html5MediaPlugin.php:201
 msgid "Close"
 msgstr "Fechar"
 
@@ -74,7 +74,7 @@ msgstr "Fechar"
 msgid "Video Settings"
 msgstr "Definições de vídeo"
 
-#: config-form.php:22
+#: config-form.php:22 config-form.php:60
 msgid "Responsive Sizing"
 msgstr "Dimensionamento automático"
 
@@ -84,11 +84,11 @@ msgid ""
 "size to its container."
 msgstr "Seleccione a caixa abaixo para permitir que o leitor de vídeo adapte o seu tamanho à janela."
 
-#: config-form.php:33 config-form.php:60 config-form.php:86
+#: config-form.php:33 config-form.php:71 config-form.php:97
 msgid "MIME Types"
 msgstr "Tipos MIME"
 
-#: config-form.php:41 config-form.php:68 config-form.php:94
+#: config-form.php:41 config-form.php:79 config-form.php:105
 msgid "Extensions"
 msgstr "Extensões"
 
@@ -96,13 +96,39 @@ msgstr "Extensões"
 msgid "Audio Settings"
 msgstr "Definições de áudio"
 
-#: config-form.php:76
+#: config-form.php:64
+msgid ""
+"Check the box below to allow the audio player to automatically match its "
+"width to its container."
+msgstr "Seleccione a caixa abaixo para permitir que o leitor de áudio adapte o seu tamanho à janela."
+
+#: config-form.php:87
 msgid "Text Settings"
 msgstr "Definições de texto"
 
-#: config-form.php:79
+#: config-form.php:90
 msgid ""
 "Text files are data like subtitles and chapter names. HTML5 Media will "
 "include them as tracks of audio or video files with the same original "
 "filename on the same item."
 msgstr "Os ficheiros de texto são dados como legendas ou nomes de capítulos. O HTML5 Media vai incluí-los como faixas nos ficheiros de áudio ou vídeo com o nome de ficheiro original no mesmo item."
+
+#: config-form.php:113
+msgid "Common Settings"
+msgstr "Definições Comuns"
+
+#: config-form.php:116
+msgid "Preload"
+msgstr "Carregar previamente"
+
+#: config-form.php:123
+msgid "Metadata Only"
+msgstr "Apenas Meta-dados"
+
+#: config-form.php:124
+msgid "Entire Media"
+msgstr "Todos os Media"
+
+#: config-form.php:125
+msgid "Disabled"
+msgstr "Desactivado"

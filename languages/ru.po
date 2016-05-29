@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: omeka-plugin-Html5Media\n"
 "Report-Msgid-Bugs-To: http://github.com/zerocrates/Html5Media/issues\n"
 "POT-Creation-Date: 2013-05-14 13:53-0500\n"
-"PO-Revision-Date: 2015-01-25 06:07+0000\n"
+"PO-Revision-Date: 2015-11-20 00:42+0000\n"
 "Last-Translator: John Flatness <john@zerocrates.org>\n"
 "Language-Team: Russian (http://www.transifex.com/omeka/omeka-plugin-html5media/language/ru/)\n"
 "MIME-Version: 1.0\n"
@@ -19,55 +19,55 @@ msgstr ""
 "Language: ru\n"
 "Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n%100>=11 && n%100<=14)? 2 : 3);\n"
 
-#: Html5MediaPlugin.php:169
+#: Html5MediaPlugin.php:189
 msgid "Download File"
 msgstr "Загрузить файл"
 
-#: Html5MediaPlugin.php:170
+#: Html5MediaPlugin.php:190
 msgid "Play"
 msgstr "Начать воспроизведение"
 
-#: Html5MediaPlugin.php:171
+#: Html5MediaPlugin.php:191
 msgid "Pause"
 msgstr "Пауза"
 
-#: Html5MediaPlugin.php:172
+#: Html5MediaPlugin.php:192
 msgid "Mute Toggle"
 msgstr "Переключатель немого режима"
 
-#: Html5MediaPlugin.php:173
+#: Html5MediaPlugin.php:193
 msgid "Fullscreen"
 msgstr "Полноэкранный режим"
 
-#: Html5MediaPlugin.php:174
+#: Html5MediaPlugin.php:194
 msgid "Captions/Subtitles"
 msgstr "Подписи/Подзаголовки"
 
-#: Html5MediaPlugin.php:175
+#: Html5MediaPlugin.php:195
 msgid "None"
 msgstr "Ни один"
 
-#: Html5MediaPlugin.php:176
+#: Html5MediaPlugin.php:196
 msgid "Turn off Fullscreen"
 msgstr "Выключить полноэкранный режим"
 
-#: Html5MediaPlugin.php:177
+#: Html5MediaPlugin.php:197
 msgid "Go Fullscreen"
 msgstr "Перейти к полноэкранному режиму"
 
-#: Html5MediaPlugin.php:178
+#: Html5MediaPlugin.php:198
 msgid "Unmute"
 msgstr "Отключить немой режим"
 
-#: Html5MediaPlugin.php:179
+#: Html5MediaPlugin.php:199
 msgid "Mute"
 msgstr "Немой режим"
 
-#: Html5MediaPlugin.php:180
+#: Html5MediaPlugin.php:200
 msgid "Download Video"
 msgstr "Загрузить видео"
 
-#: Html5MediaPlugin.php:181
+#: Html5MediaPlugin.php:201
 msgid "Close"
 msgstr "Закрыть"
 
@@ -75,7 +75,7 @@ msgstr "Закрыть"
 msgid "Video Settings"
 msgstr "Установки видео"
 
-#: config-form.php:22
+#: config-form.php:22 config-form.php:60
 msgid "Responsive Sizing"
 msgstr "Адаптивная оценка размеров"
 
@@ -85,11 +85,11 @@ msgid ""
 "size to its container."
 msgstr "Отметьте флажок внизу, чтобы видео плейер автоматически скорректировал размер."
 
-#: config-form.php:33 config-form.php:60 config-form.php:86
+#: config-form.php:33 config-form.php:71 config-form.php:97
 msgid "MIME Types"
 msgstr "Типы MIME"
 
-#: config-form.php:41 config-form.php:68 config-form.php:94
+#: config-form.php:41 config-form.php:79 config-form.php:105
 msgid "Extensions"
 msgstr "Расширения"
 
@@ -97,13 +97,39 @@ msgstr "Расширения"
 msgid "Audio Settings"
 msgstr "Установки аудио"
 
-#: config-form.php:76
+#: config-form.php:64
+msgid ""
+"Check the box below to allow the audio player to automatically match its "
+"width to its container."
+msgstr ""
+
+#: config-form.php:87
 msgid "Text Settings"
 msgstr "Установки для текста"
 
-#: config-form.php:79
+#: config-form.php:90
 msgid ""
 "Text files are data like subtitles and chapter names. HTML5 Media will "
 "include them as tracks of audio or video files with the same original "
 "filename on the same item."
 msgstr "Текстовые файлы представляют из себя данные подобные подзаголовкам и названиям глав. Плагин HTML5 Media включит их как аудио или видео треки с теми же оригинальными названиями."
+
+#: config-form.php:113
+msgid "Common Settings"
+msgstr ""
+
+#: config-form.php:116
+msgid "Preload"
+msgstr ""
+
+#: config-form.php:123
+msgid "Metadata Only"
+msgstr ""
+
+#: config-form.php:124
+msgid "Entire Media"
+msgstr ""
+
+#: config-form.php:125
+msgid "Disabled"
+msgstr ""

@@ -5,14 +5,14 @@
 # Translators:
 # Jan Černý <cernyhonza@gmail.com>, 2013
 # Jiří Vírava <appukonrad@gmail.com>, 2014-2015
-# MICHAL D. <black23@gmail.com>, 2013
+# MICHAL D. <black23@gmail.com>, 2013,2016
 msgid ""
 msgstr ""
 "Project-Id-Version: omeka-plugin-Html5Media\n"
 "Report-Msgid-Bugs-To: http://github.com/zerocrates/Html5Media/issues\n"
 "POT-Creation-Date: 2013-05-14 13:53-0500\n"
-"PO-Revision-Date: 2015-08-12 07:42+0000\n"
-"Last-Translator: Jiří Vírava <appukonrad@gmail.com>\n"
+"PO-Revision-Date: 2016-01-13 01:09+0000\n"
+"Last-Translator: MICHAL D. <black23@gmail.com>\n"
 "Language-Team: Czech (http://www.transifex.com/omeka/omeka-plugin-html5media/language/cs/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -20,55 +20,55 @@ msgstr ""
 "Language: cs\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
 
-#: Html5MediaPlugin.php:169
+#: Html5MediaPlugin.php:189
 msgid "Download File"
 msgstr "Stáhnout soubor"
 
-#: Html5MediaPlugin.php:170
+#: Html5MediaPlugin.php:190
 msgid "Play"
 msgstr "Přehrát"
 
-#: Html5MediaPlugin.php:171
+#: Html5MediaPlugin.php:191
 msgid "Pause"
 msgstr "Pozastavit"
 
-#: Html5MediaPlugin.php:172
+#: Html5MediaPlugin.php:192
 msgid "Mute Toggle"
 msgstr "Přepnout ztlumení"
 
-#: Html5MediaPlugin.php:173
+#: Html5MediaPlugin.php:193
 msgid "Fullscreen"
 msgstr "Celá obrazovka"
 
-#: Html5MediaPlugin.php:174
+#: Html5MediaPlugin.php:194
 msgid "Captions/Subtitles"
 msgstr "Popisky/Titulky"
 
-#: Html5MediaPlugin.php:175
+#: Html5MediaPlugin.php:195
 msgid "None"
 msgstr "Žádné"
 
-#: Html5MediaPlugin.php:176
+#: Html5MediaPlugin.php:196
 msgid "Turn off Fullscreen"
 msgstr "Vypnout režim celé obrazovky"
 
-#: Html5MediaPlugin.php:177
+#: Html5MediaPlugin.php:197
 msgid "Go Fullscreen"
 msgstr "Přejít do celé obrazovky"
 
-#: Html5MediaPlugin.php:178
+#: Html5MediaPlugin.php:198
 msgid "Unmute"
 msgstr "Nahlas"
 
-#: Html5MediaPlugin.php:179
+#: Html5MediaPlugin.php:199
 msgid "Mute"
 msgstr "Ztlumit"
 
-#: Html5MediaPlugin.php:180
+#: Html5MediaPlugin.php:200
 msgid "Download Video"
 msgstr "Stáhnout Video"
 
-#: Html5MediaPlugin.php:181
+#: Html5MediaPlugin.php:201
 msgid "Close"
 msgstr "Zavřít"
 
@@ -76,7 +76,7 @@ msgstr "Zavřít"
 msgid "Video Settings"
 msgstr "Nastavení obrazu"
 
-#: config-form.php:22
+#: config-form.php:22 config-form.php:60
 msgid "Responsive Sizing"
 msgstr "Přizpůsobující se velikost"
 
@@ -86,11 +86,11 @@ msgid ""
 "size to its container."
 msgstr "Zaškrtnutím volby níže povolíte přehrávači videa automaticky se přizpůsobit velikosti jeho konteineru."
 
-#: config-form.php:33 config-form.php:60 config-form.php:86
+#: config-form.php:33 config-form.php:71 config-form.php:97
 msgid "MIME Types"
 msgstr "MIME typy"
 
-#: config-form.php:41 config-form.php:68 config-form.php:94
+#: config-form.php:41 config-form.php:79 config-form.php:105
 msgid "Extensions"
 msgstr "Rozšíření"
 
@@ -98,13 +98,39 @@ msgstr "Rozšíření"
 msgid "Audio Settings"
 msgstr "Nastavení zvuku"
 
-#: config-form.php:76
+#: config-form.php:64
+msgid ""
+"Check the box below to allow the audio player to automatically match its "
+"width to its container."
+msgstr ""
+
+#: config-form.php:87
 msgid "Text Settings"
 msgstr "Nastavení textu"
 
-#: config-form.php:79
+#: config-form.php:90
 msgid ""
 "Text files are data like subtitles and chapter names. HTML5 Media will "
 "include them as tracks of audio or video files with the same original "
 "filename on the same item."
 msgstr "Textové soubory jsou data jako titulky a názvy kapitol. HTML5 media je vloží jako stopy video nebo audio souborů se stejným názvem ve stejné položce."
+
+#: config-form.php:113
+msgid "Common Settings"
+msgstr ""
+
+#: config-form.php:116
+msgid "Preload"
+msgstr ""
+
+#: config-form.php:123
+msgid "Metadata Only"
+msgstr "Pouze metadata"
+
+#: config-form.php:124
+msgid "Entire Media"
+msgstr ""
+
+#: config-form.php:125
+msgid "Disabled"
+msgstr "Neaktivní"

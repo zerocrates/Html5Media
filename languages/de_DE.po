@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: omeka-plugin-Html5Media\n"
 "Report-Msgid-Bugs-To: http://github.com/zerocrates/Html5Media/issues\n"
 "POT-Creation-Date: 2013-05-14 13:53-0500\n"
-"PO-Revision-Date: 2015-02-26 08:29+0000\n"
+"PO-Revision-Date: 2015-12-14 13:49+0000\n"
 "Last-Translator: Roland Keck <roland.keck@web.de>\n"
 "Language-Team: German (Germany) (http://www.transifex.com/omeka/omeka-plugin-html5media/language/de_DE/)\n"
 "MIME-Version: 1.0\n"
@@ -18,55 +18,55 @@ msgstr ""
 "Language: de_DE\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: Html5MediaPlugin.php:169
+#: Html5MediaPlugin.php:189
 msgid "Download File"
 msgstr "Datei herunterladen"
 
-#: Html5MediaPlugin.php:170
+#: Html5MediaPlugin.php:190
 msgid "Play"
 msgstr "Spielen"
 
-#: Html5MediaPlugin.php:171
+#: Html5MediaPlugin.php:191
 msgid "Pause"
 msgstr "Pause"
 
-#: Html5MediaPlugin.php:172
+#: Html5MediaPlugin.php:192
 msgid "Mute Toggle"
 msgstr "Stumm ein/aus"
 
-#: Html5MediaPlugin.php:173
+#: Html5MediaPlugin.php:193
 msgid "Fullscreen"
 msgstr "Ganzer Bildschirm"
 
-#: Html5MediaPlugin.php:174
+#: Html5MediaPlugin.php:194
 msgid "Captions/Subtitles"
 msgstr "Beschriftung/ Untertitel"
 
-#: Html5MediaPlugin.php:175
+#: Html5MediaPlugin.php:195
 msgid "None"
 msgstr "Kein"
 
-#: Html5MediaPlugin.php:176
+#: Html5MediaPlugin.php:196
 msgid "Turn off Fullscreen"
 msgstr "Anzeige ganzer Bildschirm aus"
 
-#: Html5MediaPlugin.php:177
+#: Html5MediaPlugin.php:197
 msgid "Go Fullscreen"
 msgstr "Anzeige ganzer Bildschirm ein"
 
-#: Html5MediaPlugin.php:178
+#: Html5MediaPlugin.php:198
 msgid "Unmute"
 msgstr "Stumm aus"
 
-#: Html5MediaPlugin.php:179
+#: Html5MediaPlugin.php:199
 msgid "Mute"
 msgstr "Stumm ein"
 
-#: Html5MediaPlugin.php:180
+#: Html5MediaPlugin.php:200
 msgid "Download Video"
 msgstr "Video herunterladen"
 
-#: Html5MediaPlugin.php:181
+#: Html5MediaPlugin.php:201
 msgid "Close"
 msgstr "Schließen"
 
@@ -74,7 +74,7 @@ msgstr "Schließen"
 msgid "Video Settings"
 msgstr "Video Einstellungen"
 
-#: config-form.php:22
+#: config-form.php:22 config-form.php:60
 msgid "Responsive Sizing"
 msgstr "Größenanpassung"
 
@@ -84,11 +84,11 @@ msgid ""
 "size to its container."
 msgstr "Checkbox anhaken, damit der Videoplayer automatisch seine Größe an den Container anpassen kann."
 
-#: config-form.php:33 config-form.php:60 config-form.php:86
+#: config-form.php:33 config-form.php:71 config-form.php:97
 msgid "MIME Types"
 msgstr "MIME Typen"
 
-#: config-form.php:41 config-form.php:68 config-form.php:94
+#: config-form.php:41 config-form.php:79 config-form.php:105
 msgid "Extensions"
 msgstr "Erweiterungen"
 
@@ -96,13 +96,39 @@ msgstr "Erweiterungen"
 msgid "Audio Settings"
 msgstr "Audio Einstellungen"
 
-#: config-form.php:76
+#: config-form.php:64
+msgid ""
+"Check the box below to allow the audio player to automatically match its "
+"width to its container."
+msgstr "Checkbox anhaken, damit der Videoplayer automatisch seine Größe an den Container anpassen kann."
+
+#: config-form.php:87
 msgid "Text Settings"
 msgstr "Text Einstellungen"
 
-#: config-form.php:79
+#: config-form.php:90
 msgid ""
 "Text files are data like subtitles and chapter names. HTML5 Media will "
 "include them as tracks of audio or video files with the same original "
 "filename on the same item."
-msgstr "Textdateien sind Daten wie Untertitel und Kapitelnamen. HTML5 Media wird diese als Audio-Tracks oder Video-Dateien mit dem Originalnamen auf dem betreffenden Objekt verwemdem"
+msgstr "Textdateien sind Daten wie Untertitel und Kapitelnamen. HTML5 Media wird diese als Audio-Tracks oder Video-Dateien mit dem Originalnamen auf dem betreffenden Objekt verwenden"
+
+#: config-form.php:113
+msgid "Common Settings"
+msgstr "Allgemeine Einstellungen"
+
+#: config-form.php:116
+msgid "Preload"
+msgstr "Laden"
+
+#: config-form.php:123
+msgid "Metadata Only"
+msgstr "Nur Metadaten"
+
+#: config-form.php:124
+msgid "Entire Media"
+msgstr "Vollständiges Medium"
+
+#: config-form.php:125
+msgid "Disabled"
+msgstr "ausgeschalten"

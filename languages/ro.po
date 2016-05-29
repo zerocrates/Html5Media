@@ -5,14 +5,14 @@
 # Translators:
 # Doru  DEACONU <dumitrudeaconu@yahoo.com>, 2014
 # Doru  DEACONU <dumitrudeaconu@yahoo.com>, 2014
-# Nicolaie Constantinescu <kosson@gmail.com>, 2013
+# Nicolaie Constantinescu <kosson@gmail.com>, 2013,2015
 msgid ""
 msgstr ""
 "Project-Id-Version: omeka-plugin-Html5Media\n"
 "Report-Msgid-Bugs-To: http://github.com/zerocrates/Html5Media/issues\n"
 "POT-Creation-Date: 2013-05-14 13:53-0500\n"
-"PO-Revision-Date: 2015-01-25 06:07+0000\n"
-"Last-Translator: John Flatness <john@zerocrates.org>\n"
+"PO-Revision-Date: 2015-11-28 21:56+0000\n"
+"Last-Translator: Nicolaie Constantinescu <kosson@gmail.com>\n"
 "Language-Team: Romanian (http://www.transifex.com/omeka/omeka-plugin-html5media/language/ro/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -20,55 +20,55 @@ msgstr ""
 "Language: ro\n"
 "Plural-Forms: nplurals=3; plural=(n==1?0:(((n%100>19)||((n%100==0)&&(n!=0)))?2:1));\n"
 
-#: Html5MediaPlugin.php:169
+#: Html5MediaPlugin.php:189
 msgid "Download File"
 msgstr "Descarcă fişier"
 
-#: Html5MediaPlugin.php:170
+#: Html5MediaPlugin.php:190
 msgid "Play"
 msgstr "Play"
 
-#: Html5MediaPlugin.php:171
+#: Html5MediaPlugin.php:191
 msgid "Pause"
 msgstr "Pauză"
 
-#: Html5MediaPlugin.php:172
+#: Html5MediaPlugin.php:192
 msgid "Mute Toggle"
 msgstr "Comută fără sonor"
 
-#: Html5MediaPlugin.php:173
+#: Html5MediaPlugin.php:193
 msgid "Fullscreen"
 msgstr "Fullscreen"
 
-#: Html5MediaPlugin.php:174
+#: Html5MediaPlugin.php:194
 msgid "Captions/Subtitles"
 msgstr "Titluri/Subtritrări"
 
-#: Html5MediaPlugin.php:175
+#: Html5MediaPlugin.php:195
 msgid "None"
 msgstr "Nici unul"
 
-#: Html5MediaPlugin.php:176
+#: Html5MediaPlugin.php:196
 msgid "Turn off Fullscreen"
 msgstr "Turn off Fullscreen"
 
-#: Html5MediaPlugin.php:177
+#: Html5MediaPlugin.php:197
 msgid "Go Fullscreen"
 msgstr "Go Fullscreen"
 
-#: Html5MediaPlugin.php:178
+#: Html5MediaPlugin.php:198
 msgid "Unmute"
 msgstr "Cu sonor"
 
-#: Html5MediaPlugin.php:179
+#: Html5MediaPlugin.php:199
 msgid "Mute"
 msgstr "Fără sonor"
 
-#: Html5MediaPlugin.php:180
+#: Html5MediaPlugin.php:200
 msgid "Download Video"
 msgstr "Descarcă video"
 
-#: Html5MediaPlugin.php:181
+#: Html5MediaPlugin.php:201
 msgid "Close"
 msgstr "Închide"
 
@@ -76,7 +76,7 @@ msgstr "Închide"
 msgid "Video Settings"
 msgstr "Setări video"
 
-#: config-form.php:22
+#: config-form.php:22 config-form.php:60
 msgid "Responsive Sizing"
 msgstr "Redimensionare adaptabilă"
 
@@ -86,11 +86,11 @@ msgid ""
 "size to its container."
 msgstr "Bifează mai jos pentru a permite potrivirea automată a dimensiunii cu cea a containerului."
 
-#: config-form.php:33 config-form.php:60 config-form.php:86
+#: config-form.php:33 config-form.php:71 config-form.php:97
 msgid "MIME Types"
 msgstr "Tipuri MIME"
 
-#: config-form.php:41 config-form.php:68 config-form.php:94
+#: config-form.php:41 config-form.php:79 config-form.php:105
 msgid "Extensions"
 msgstr "Extensii"
 
@@ -98,13 +98,39 @@ msgstr "Extensii"
 msgid "Audio Settings"
 msgstr "Setări audio"
 
-#: config-form.php:76
+#: config-form.php:64
+msgid ""
+"Check the box below to allow the audio player to automatically match its "
+"width to its container."
+msgstr "Bifează mai jos pentru a permite potrivirea automată a dimensiunii cu cea a containerului."
+
+#: config-form.php:87
 msgid "Text Settings"
 msgstr "Setări pentru text"
 
-#: config-form.php:79
+#: config-form.php:90
 msgid ""
 "Text files are data like subtitles and chapter names. HTML5 Media will "
 "include them as tracks of audio or video files with the same original "
 "filename on the same item."
 msgstr "Fișierele de text sunt date precum sunt titlurile de secțiune sau numele capitolelor. Media oferită de HTML5 le va include ca trackuri audio sau video având numele original al fișierului inclus în aceeași resursă."
+
+#: config-form.php:113
+msgid "Common Settings"
+msgstr "Setări generale"
+
+#: config-form.php:116
+msgid "Preload"
+msgstr "Preîncărcare"
+
+#: config-form.php:123
+msgid "Metadata Only"
+msgstr "Doar metadate"
+
+#: config-form.php:124
+msgid "Entire Media"
+msgstr "Întreaga resursă media"
+
+#: config-form.php:125
+msgid "Disabled"
+msgstr "Dezactivat"

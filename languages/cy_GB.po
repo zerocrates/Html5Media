@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: omeka-plugin-Html5Media\n"
 "Report-Msgid-Bugs-To: http://github.com/zerocrates/Html5Media/issues\n"
 "POT-Creation-Date: 2013-05-14 13:53-0500\n"
-"PO-Revision-Date: 2015-01-25 06:07+0000\n"
+"PO-Revision-Date: 2015-11-20 00:42+0000\n"
 "Last-Translator: John Flatness <john@zerocrates.org>\n"
 "Language-Team: Welsh (United Kingdom) (http://www.transifex.com/omeka/omeka-plugin-html5media/language/cy_GB/)\n"
 "MIME-Version: 1.0\n"
@@ -19,55 +19,55 @@ msgstr ""
 "Language: cy_GB\n"
 "Plural-Forms: nplurals=4; plural=(n==1) ? 0 : (n==2) ? 1 : (n != 8 && n != 11) ? 2 : 3;\n"
 
-#: Html5MediaPlugin.php:169
+#: Html5MediaPlugin.php:189
 msgid "Download File"
 msgstr "Lawrlwytho Ffeil"
 
-#: Html5MediaPlugin.php:170
+#: Html5MediaPlugin.php:190
 msgid "Play"
 msgstr "Chwarae"
 
-#: Html5MediaPlugin.php:171
+#: Html5MediaPlugin.php:191
 msgid "Pause"
 msgstr "Atal"
 
-#: Html5MediaPlugin.php:172
+#: Html5MediaPlugin.php:192
 msgid "Mute Toggle"
 msgstr "Tawelu: ymlaen/i ffwrdd"
 
-#: Html5MediaPlugin.php:173
+#: Html5MediaPlugin.php:193
 msgid "Fullscreen"
 msgstr "Llond Sgrin"
 
-#: Html5MediaPlugin.php:174
+#: Html5MediaPlugin.php:194
 msgid "Captions/Subtitles"
 msgstr "Penawdau/Is-deitlau"
 
-#: Html5MediaPlugin.php:175
+#: Html5MediaPlugin.php:195
 msgid "None"
 msgstr "Dim"
 
-#: Html5MediaPlugin.php:176
+#: Html5MediaPlugin.php:196
 msgid "Turn off Fullscreen"
 msgstr "Troi Llond Sgrin i Ffwrdd"
 
-#: Html5MediaPlugin.php:177
+#: Html5MediaPlugin.php:197
 msgid "Go Fullscreen"
 msgstr "Llond Sgrin"
 
-#: Html5MediaPlugin.php:178
+#: Html5MediaPlugin.php:198
 msgid "Unmute"
 msgstr "Sain Ymlaen"
 
-#: Html5MediaPlugin.php:179
+#: Html5MediaPlugin.php:199
 msgid "Mute"
 msgstr "Tawelu"
 
-#: Html5MediaPlugin.php:180
+#: Html5MediaPlugin.php:200
 msgid "Download Video"
 msgstr "Lawrlwytho Fidio"
 
-#: Html5MediaPlugin.php:181
+#: Html5MediaPlugin.php:201
 msgid "Close"
 msgstr "Cau"
 
@@ -75,7 +75,7 @@ msgstr "Cau"
 msgid "Video Settings"
 msgstr "Gosodiadau Fidio"
 
-#: config-form.php:22
+#: config-form.php:22 config-form.php:60
 msgid "Responsive Sizing"
 msgstr "Maint ymatebol"
 
@@ -85,11 +85,11 @@ msgid ""
 "size to its container."
 msgstr "Cliciwch isod er mwyn galluogi i'r chwaraewr fidio newid maint yn awtomatig er mwyn ffitio yn y blwch priodol."
 
-#: config-form.php:33 config-form.php:60 config-form.php:86
+#: config-form.php:33 config-form.php:71 config-form.php:97
 msgid "MIME Types"
 msgstr "Mathau MIME"
 
-#: config-form.php:41 config-form.php:68 config-form.php:94
+#: config-form.php:41 config-form.php:79 config-form.php:105
 msgid "Extensions"
 msgstr "Estyniadau"
 
@@ -97,13 +97,39 @@ msgstr "Estyniadau"
 msgid "Audio Settings"
 msgstr "Gosodiadau Sain"
 
-#: config-form.php:76
+#: config-form.php:64
+msgid ""
+"Check the box below to allow the audio player to automatically match its "
+"width to its container."
+msgstr ""
+
+#: config-form.php:87
 msgid "Text Settings"
 msgstr "Gosodiadau Testun"
 
-#: config-form.php:79
+#: config-form.php:90
 msgid ""
 "Text files are data like subtitles and chapter names. HTML5 Media will "
 "include them as tracks of audio or video files with the same original "
 "filename on the same item."
 msgstr "Mae feiliau testun fel is-deitlau a theitlau pennodau. Bydd HTML5 Media yn eu cynnwys fel traciau sain neu fidio gyda'r un enw ffeil a'r enw ffeil gwreiddiol yn yr un eitem."
+
+#: config-form.php:113
+msgid "Common Settings"
+msgstr ""
+
+#: config-form.php:116
+msgid "Preload"
+msgstr ""
+
+#: config-form.php:123
+msgid "Metadata Only"
+msgstr ""
+
+#: config-form.php:124
+msgid "Entire Media"
+msgstr ""
+
+#: config-form.php:125
+msgid "Disabled"
+msgstr ""
