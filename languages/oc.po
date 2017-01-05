@@ -3,135 +3,132 @@
 # This file is distributed under the GNU General Public License, v3.
 # 
 # Translators:
-# dario hereñu <magallania@gmail.com>, 2014
-# Francisco Gálvez Prada <iguannaweb@gmail.com>, 2013
-# Ignacio Poggi <ignaciop.3@gmail.com>, 2016
-# Pablo Laguna <pablolaguna@vera.com.uy>, 2014
+# Cédric Valmary <cvalmary@yahoo.fr>, 2016
 msgid ""
 msgstr ""
 "Project-Id-Version: omeka-plugin-Html5Media\n"
 "Report-Msgid-Bugs-To: http://github.com/zerocrates/Html5Media/issues\n"
 "POT-Creation-Date: 2013-05-14 13:53-0500\n"
-"PO-Revision-Date: 2016-08-06 07:28+0000\n"
-"Last-Translator: Ignacio Poggi <ignaciop.3@gmail.com>\n"
-"Language-Team: Spanish (http://www.transifex.com/omeka/omeka-plugin-html5media/language/es/)\n"
+"PO-Revision-Date: 2016-09-29 05:53+0000\n"
+"Last-Translator: Cfpo Miègjorn-Pirenèus <formacion@cfpoc.net>\n"
+"Language-Team: Occitan (post 1500) (http://www.transifex.com/omeka/omeka-plugin-html5media/language/oc/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: es\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Language: oc\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
 #: Html5MediaPlugin.php:189
 msgid "Download File"
-msgstr "Descargar fichero"
+msgstr "Telecargar lo fichièr"
 
 #: Html5MediaPlugin.php:190
 msgid "Play"
-msgstr "Reproducir"
+msgstr "Lectura"
 
 #: Html5MediaPlugin.php:191
 msgid "Pause"
-msgstr "Pausar"
+msgstr "Pausa"
 
 #: Html5MediaPlugin.php:192
 msgid "Mute Toggle"
-msgstr "Silenciar"
+msgstr "Mòde mut"
 
 #: Html5MediaPlugin.php:193
 msgid "Fullscreen"
-msgstr "Pantalla completa"
+msgstr "Ecran complet"
 
 #: Html5MediaPlugin.php:194
 msgid "Captions/Subtitles"
-msgstr "Subtítulos"
+msgstr "Legendas/Sostítols"
 
 #: Html5MediaPlugin.php:195
 msgid "None"
-msgstr "Ninguno"
+msgstr "Pas cap"
 
 #: Html5MediaPlugin.php:196
 msgid "Turn off Fullscreen"
-msgstr "Salir de pantalla completa"
+msgstr "Tampar l'ecran complet"
 
 #: Html5MediaPlugin.php:197
 msgid "Go Fullscreen"
-msgstr "Ir a pantalla completa"
+msgstr "Mòde ecran complet"
 
 #: Html5MediaPlugin.php:198
 msgid "Unmute"
-msgstr "Habilitar sonido"
+msgstr "Sonòr"
 
 #: Html5MediaPlugin.php:199
 msgid "Mute"
-msgstr "Silenciar"
+msgstr "Mut"
 
 #: Html5MediaPlugin.php:200
 msgid "Download Video"
-msgstr "Descargar vídeo"
+msgstr "Telecargar la vidèo"
 
 #: Html5MediaPlugin.php:201
 msgid "Close"
-msgstr "Cerrar"
+msgstr "Tampar"
 
 #: config-form.php:3
 msgid "Video Settings"
-msgstr "Preferencias de video"
+msgstr "Paramètres vidèo"
 
 #: config-form.php:22 config-form.php:60
 msgid "Responsive Sizing"
-msgstr "Escalado ajustado a pantalla"
+msgstr "Dimensionament adaptat al supòrt"
 
 #: config-form.php:26
 msgid ""
 "Check the box below to allow the video player to automatically match its "
 "size to its container."
-msgstr "Marque la siguiente casilla para permitir que el visor de video se ajuste automáticamente al ancho de su contenedor."
+msgstr "Marcar la casa seguenta per autorizar lo lector de vidèo a correspondre automaticament sa talha a son contenidor."
 
 #: config-form.php:33 config-form.php:71 config-form.php:97
 msgid "MIME Types"
-msgstr "Tipos de archivo"
+msgstr "Tipes MIME"
 
 #: config-form.php:41 config-form.php:79 config-form.php:105
 msgid "Extensions"
-msgstr "Extensiones"
+msgstr "Extensions"
 
 #: config-form.php:49
 msgid "Audio Settings"
-msgstr "Preferencias de audio"
+msgstr "Paramètres àudio"
 
 #: config-form.php:64
 msgid ""
 "Check the box below to allow the audio player to automatically match its "
 "width to its container."
-msgstr "Marque la siguiente casilla para permitir que el reproductor de audio se ajuste automáticamente al ancho de su contenedor."
+msgstr "Marcar la casa çaijós per permetre al lector àudio d'ajustar automaticament sa largor al contenent."
 
 #: config-form.php:87
 msgid "Text Settings"
-msgstr "Preferencias de texto"
+msgstr "Paramètres del tèxte"
 
 #: config-form.php:90
 msgid ""
 "Text files are data like subtitles and chapter names. HTML5 Media will "
 "include them as tracks of audio or video files with the same original "
 "filename on the same item."
-msgstr "Archivos de texto son datos como subtítulos y títulos. HTML5 Media los incluirá como pistas de música o archivos de video con el nombre original del archivo en el mismo elemento."
+msgstr "Los fichièrs tèxte son de donadas coma los sostítols e lo nom dels capítols. HTML5 Media los inclurà coma pistas àudio o vidèo amb lo meteis nom de fichièr original sul meteis item."
 
 #: config-form.php:113
 msgid "Common Settings"
-msgstr "Preferencias generales"
+msgstr "Paramètres comuns"
 
 #: config-form.php:116
 msgid "Preload"
-msgstr "Precarga"
+msgstr "Precargament"
 
 #: config-form.php:123
 msgid "Metadata Only"
-msgstr "Sólo metadatos"
+msgstr "Solament las metadonadas"
 
 #: config-form.php:124
 msgid "Entire Media"
-msgstr "Todo el medio"
+msgstr "Mèdia entièr"
 
 #: config-form.php:125
 msgid "Disabled"
-msgstr "Deshabilitado"
+msgstr "Desactivat"

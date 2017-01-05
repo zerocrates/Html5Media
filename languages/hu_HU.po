@@ -3,7 +3,7 @@
 # This file is distributed under the GNU General Public License, v3.
 # 
 # Translators:
-# madaraszcsaba <madarasz.csaba@gmail.com>, 2015
+# Csaba Madarász <madarasz.csaba@gmail.com>, 2015
 msgid ""
 msgstr ""
 "Project-Id-Version: omeka-plugin-Html5Media\n"
