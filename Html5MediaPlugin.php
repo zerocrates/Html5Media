@@ -238,6 +238,11 @@ class Html5MediaPlugin extends Omeka_Plugin_AbstractPlugin
         if (isset($options['preload'])) {
             $mediaOptions .= ' preload="' . html_escape($options['preload']). '"';
         }
+        if ($type === 'video' && $file->has_derivative_image) {
+            $posterUrl = $file->getWebPath('fullsize');
+            $mediaOptions .= ' poster="' . html_escape($posterUrl) . '"';
+        }
+
 
         $filename = html_escape($file->getWebPath('original'));
 
