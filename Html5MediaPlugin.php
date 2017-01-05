@@ -185,20 +185,21 @@ class Html5MediaPlugin extends Omeka_Plugin_AbstractPlugin
         if (Zend_Registry::isRegistered('Zend_Translate')) {
             $l10n = array(
                 'language' => get_html_lang(),
+                'lang' => get_html_lang(), // workaround for bug, should be fixed in MEjs 3.x
                 'strings' => array(
-                    'Download File' => __('Download File'),
-                    'Play' => __('Play'),
-                    'Pause' => __('Pause'),
-                    'Mute Toggle' => __('Mute Toggle'),
-                    'Fullscreen' => __('Fullscreen'),
-                    'Captions/Subtitles' => __('Captions/Subtitles'),
-                    'None' => __('None'),
-                    'Turn off Fullscreen' => __('Turn off Fullscreen'),
-                    'Go Fullscreen' => __('Go Fullscreen'),
-                    'Unmute' => __('Unmute'),
-                    'Mute' => __('Mute'),
-                    'Download Video' => __('Download Video'),
-                    'Close' => __('Close')
+                    'mejs.download-file' => __('Download File'),
+                    'mejs.play' => __('Play'),
+                    'mejs.pause' => __('Pause'),
+                    'mejs.mute-toggle' => __('Mute Toggle'),
+                    'mejs.fullscreen' => __('Fullscreen'),
+                    'mejs.captions-subtitles' => __('Captions/Subtitles'),
+                    'mejs.none' => __('None'),
+                    'mejs.fullscreen-off' => __('Turn off Fullscreen'),
+                    'mejs.fullscreen-on' => __('Go Fullscreen'),
+                    'mejs.unmute' => __('Unmute'),
+                    'mejs.mute' => __('Mute'),
+                    'mejs.download-video' => __('Download Video'),
+                    'mejs.close' => __('Close')
                 )
             );
             $l10nScript = 'mejsL10n = ' . js_escape($l10n) . ';';
