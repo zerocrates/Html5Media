@@ -17,55 +17,55 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: Html5MediaPlugin.php:189
+#: Html5MediaPlugin.php:194 Html5MediaPlugin.php:281
 msgid "Download File"
 msgstr ""
 
-#: Html5MediaPlugin.php:190
+#: Html5MediaPlugin.php:195
 msgid "Play"
 msgstr ""
 
-#: Html5MediaPlugin.php:191
+#: Html5MediaPlugin.php:196
 msgid "Pause"
 msgstr ""
 
-#: Html5MediaPlugin.php:192
+#: Html5MediaPlugin.php:197
 msgid "Mute Toggle"
 msgstr ""
 
-#: Html5MediaPlugin.php:193
+#: Html5MediaPlugin.php:198
 msgid "Fullscreen"
 msgstr ""
 
-#: Html5MediaPlugin.php:194
+#: Html5MediaPlugin.php:199
 msgid "Captions/Subtitles"
 msgstr ""
 
-#: Html5MediaPlugin.php:195
+#: Html5MediaPlugin.php:200
 msgid "None"
 msgstr ""
 
-#: Html5MediaPlugin.php:196
+#: Html5MediaPlugin.php:201
 msgid "Turn off Fullscreen"
 msgstr ""
 
-#: Html5MediaPlugin.php:197
+#: Html5MediaPlugin.php:202
 msgid "Go Fullscreen"
 msgstr ""
 
-#: Html5MediaPlugin.php:198
+#: Html5MediaPlugin.php:203
 msgid "Unmute"
 msgstr ""
 
-#: Html5MediaPlugin.php:199
+#: Html5MediaPlugin.php:204
 msgid "Mute"
 msgstr ""
 
-#: Html5MediaPlugin.php:200
+#: Html5MediaPlugin.php:205
 msgid "Download Video"
 msgstr ""
 
-#: Html5MediaPlugin.php:201
+#: Html5MediaPlugin.php:206
 msgid "Close"
 msgstr ""
 
@@ -130,4 +130,8 @@ msgstr ""
 
 #: config-form.php:125
 msgid "Disabled"
+msgstr ""
+
+#: config-form.php:133
+msgid "Show Download Link"
 msgstr ""
