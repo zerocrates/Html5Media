@@ -4,15 +4,15 @@
 # 
 # Translators:
 # Jan Černý <cernyhonza@gmail.com>, 2013
-# Jiří Vírava <appukonrad@gmail.com>, 2014-2015
+# Jiří Vírava <appukonrad@gmail.com>, 2014-2015,2017
 # MICHAL D. <black23@gmail.com>, 2013,2016
 msgid ""
 msgstr ""
 "Project-Id-Version: omeka-plugin-Html5Media\n"
 "Report-Msgid-Bugs-To: http://github.com/zerocrates/Html5Media/issues\n"
 "POT-Creation-Date: 2013-05-14 13:53-0500\n"
-"PO-Revision-Date: 2016-01-13 01:09+0000\n"
-"Last-Translator: MICHAL D. <black23@gmail.com>\n"
+"PO-Revision-Date: 2017-09-19 18:38+0000\n"
+"Last-Translator: Jiří Vírava <appukonrad@gmail.com>\n"
 "Language-Team: Czech (http://www.transifex.com/omeka/omeka-plugin-html5media/language/cs/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -102,7 +102,7 @@ msgstr "Nastavení zvuku"
 msgid ""
 "Check the box below to allow the audio player to automatically match its "
 "width to its container."
-msgstr ""
+msgstr "Zaškrtnutím níže uvedeného políčka, se audio přehrávač automaticky přizpůsobí šířce kontejneru."
 
 #: config-form.php:87
 msgid "Text Settings"
@@ -117,11 +117,11 @@ msgstr "Textové soubory jsou data jako titulky a názvy kapitol. HTML5 media je
 
 #: config-form.php:113
 msgid "Common Settings"
-msgstr ""
+msgstr "Společná nastavení"
 
 #: config-form.php:116
 msgid "Preload"
-msgstr ""
+msgstr "Přednačítání"
 
 #: config-form.php:123
 msgid "Metadata Only"
@@ -129,7 +129,7 @@ msgstr "Pouze metadata"
 
 #: config-form.php:124
 msgid "Entire Media"
-msgstr ""
+msgstr "Celá média"
 
 #: config-form.php:125
 msgid "Disabled"
