@@ -46,6 +46,7 @@ class Html5MediaPlugin extends Omeka_Plugin_AbstractPlugin
                     'controls' => true,
                     'loop'     => false,
                     'preload'  => 'metadata',
+                    'download' => false,
                 )
             )
         );
@@ -81,6 +82,9 @@ class Html5MediaPlugin extends Omeka_Plugin_AbstractPlugin
         }
         if (version_compare($oldVersion, '2.6', '<')) {
             $settings['audio']['options']['responsive'] = false;
+        }
+        if (version_compare($oldVersion, '2.7', '<')) {
+            $settings['common']['options']['download'] = false;
         }
         set_option('html5_media_settings', serialize($settings));
     }
@@ -151,6 +155,7 @@ class Html5MediaPlugin extends Omeka_Plugin_AbstractPlugin
 
         $common = $_POST['common'];
         $settings['common']['options']['preload'] = $common['options']['preload'];
+        $settings['common']['options']['download'] = (bool) $common['options']['download'];
 
         set_option('html5_media_settings', serialize($settings));
     }
@@ -272,11 +277,20 @@ class Html5MediaPlugin extends Omeka_Plugin_AbstractPlugin
             $tracks .= '<track kind="' . $kind . '" src="' . $trackSrc . '" srclang="' . $language . '"' . $labelPart . '>';
         }
 
+        if ($options['download']) {
+            $download = '<p class="html5media-download"><a href="' . $filename . '" download>'
+                . __('Download File')
+                . '</a></p>';
+        } else {
+            $download = '';
+        }
+
         return <<<HTML
 <div class="$class">
 <$type id="html5-media-$i" src="$filename"$mediaOptions>
 $tracks
 </$type>
+$download
 </div>
 <script type="text/javascript">
 jQuery('#html5-media-$i').mediaelementplayer();

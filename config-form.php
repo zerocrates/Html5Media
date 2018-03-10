@@ -128,4 +128,12 @@
             ?>
         </div>
     </div>
+    <div class="field">
+        <div class="two columns alpha">
+            <?php echo $view->formLabel('common[options][download]', __('Show Download Link')); ?>
+        </div>
+        <div class="inputs five columns omega">
+            <?php echo $view->formCheckbox('common[options][download]', null, array('checked' => $common['options']['download'])); ?>
+        </div>
+    </div>
 </div>
