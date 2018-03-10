@@ -190,7 +190,6 @@ class Html5MediaPlugin extends Omeka_Plugin_AbstractPlugin
         if (Zend_Registry::isRegistered('Zend_Translate')) {
             $l10n = array(
                 'language' => get_html_lang(),
-                'lang' => get_html_lang(), // workaround for bug, should be fixed in MEjs 3.x
                 'strings' => array(
                     'mejs.download-file' => __('Download File'),
                     'mejs.play' => __('Play'),
