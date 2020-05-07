@@ -211,7 +211,7 @@ class Html5MediaPlugin extends Omeka_Plugin_AbstractPlugin
         }
 
         queue_js_file('mediaelement-and-player.min', 'mediaelement');
-        queue_css_file('mediaelementplayer', 'all', false, 'mediaelement');
+        queue_css_file('mediaelementplayer-legacy.min', 'all', false, 'mediaelement');
         queue_css_file('html5media', 'all');
         if (is_admin_theme()) {
             queue_css_file('html5media-mejs-overrides', 'all');
@@ -292,7 +292,7 @@ $tracks
 $download
 </div>
 <script type="text/javascript">
-jQuery('#html5-media-$i').mediaelementplayer();
+jQuery('#html5-media-$i').mediaelementplayer({classPrefix: 'mejs-'});
 </script>
 HTML;
     }
