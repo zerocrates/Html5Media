@@ -247,6 +247,9 @@ class Html5MediaPlugin extends Omeka_Plugin_AbstractPlugin
             $posterUrl = $file->getWebPath('fullsize');
             $mediaOptions .= ' poster="' . html_escape($posterUrl) . '"';
         }
+        if ($type === 'video' && $file->mime_type === 'video/quicktime') {
+            $mediaOptions .= ' type="video/mp4"';
+        }
 
 
         $filename = html_escape($file->getWebPath('original'));
