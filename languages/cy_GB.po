@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: omeka-plugin-Html5Media\n"
 "Report-Msgid-Bugs-To: http://github.com/zerocrates/Html5Media/issues\n"
 "POT-Creation-Date: 2013-05-14 13:53-0500\n"
-"PO-Revision-Date: 2017-09-19 22:32+0000\n"
+"PO-Revision-Date: 2018-03-10 02:49+0000\n"
 "Last-Translator: John Flatness <john@zerocrates.org>\n"
 "Language-Team: Welsh (United Kingdom) (http://www.transifex.com/omeka/omeka-plugin-html5media/language/cy_GB/)\n"
 "MIME-Version: 1.0\n"
@@ -19,55 +19,55 @@ msgstr ""
 "Language: cy_GB\n"
 "Plural-Forms: nplurals=4; plural=(n==1) ? 0 : (n==2) ? 1 : (n != 8 && n != 11) ? 2 : 3;\n"
 
-#: Html5MediaPlugin.php:189
+#: Html5MediaPlugin.php:194 Html5MediaPlugin.php:281
 msgid "Download File"
 msgstr "Lawrlwytho Ffeil"
 
-#: Html5MediaPlugin.php:190
+#: Html5MediaPlugin.php:195
 msgid "Play"
 msgstr "Chwarae"
 
-#: Html5MediaPlugin.php:191
+#: Html5MediaPlugin.php:196
 msgid "Pause"
 msgstr "Atal"
 
-#: Html5MediaPlugin.php:192
+#: Html5MediaPlugin.php:197
 msgid "Mute Toggle"
 msgstr "Tawelu: ymlaen/i ffwrdd"
 
-#: Html5MediaPlugin.php:193
+#: Html5MediaPlugin.php:198
 msgid "Fullscreen"
 msgstr "Llond Sgrin"
 
-#: Html5MediaPlugin.php:194
+#: Html5MediaPlugin.php:199
 msgid "Captions/Subtitles"
 msgstr "Penawdau/Is-deitlau"
 
-#: Html5MediaPlugin.php:195
+#: Html5MediaPlugin.php:200
 msgid "None"
 msgstr "Dim"
 
-#: Html5MediaPlugin.php:196
+#: Html5MediaPlugin.php:201
 msgid "Turn off Fullscreen"
 msgstr "Troi Llond Sgrin i Ffwrdd"
 
-#: Html5MediaPlugin.php:197
+#: Html5MediaPlugin.php:202
 msgid "Go Fullscreen"
 msgstr "Llond Sgrin"
 
-#: Html5MediaPlugin.php:198
+#: Html5MediaPlugin.php:203
 msgid "Unmute"
 msgstr "Sain Ymlaen"
 
-#: Html5MediaPlugin.php:199
+#: Html5MediaPlugin.php:204
 msgid "Mute"
 msgstr "Tawelu"
 
-#: Html5MediaPlugin.php:200
+#: Html5MediaPlugin.php:205
 msgid "Download Video"
 msgstr "Lawrlwytho Fidio"
 
-#: Html5MediaPlugin.php:201
+#: Html5MediaPlugin.php:206
 msgid "Close"
 msgstr "Cau"
 
@@ -132,4 +132,8 @@ msgstr ""
 
 #: config-form.php:125
 msgid "Disabled"
+msgstr ""
+
+#: config-form.php:133
+msgid "Show Download Link"
 msgstr ""

@@ -3,137 +3,136 @@
 # This file is distributed under the GNU General Public License, v3.
 # 
 # Translators:
-# Gabriel Radev <gabosss@gmail.com>, 2015,2017
-# Svetaketi Aruni <svetliok26@gmail.com>, 2015
+# Naosuke Okamoto, 2018-2019
 msgid ""
 msgstr ""
 "Project-Id-Version: omeka-plugin-Html5Media\n"
 "Report-Msgid-Bugs-To: http://github.com/zerocrates/Html5Media/issues\n"
 "POT-Creation-Date: 2013-05-14 13:53-0500\n"
-"PO-Revision-Date: 2018-03-10 02:49+0000\n"
-"Last-Translator: John Flatness <john@zerocrates.org>\n"
-"Language-Team: Bulgarian (Bulgaria) (http://www.transifex.com/omeka/omeka-plugin-html5media/language/bg_BG/)\n"
+"PO-Revision-Date: 2019-01-13 08:09+0000\n"
+"Last-Translator: Naosuke Okamoto\n"
+"Language-Team: Japanese (http://www.transifex.com/omeka/omeka-plugin-html5media/language/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: bg_BG\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Language: ja\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
 
 #: Html5MediaPlugin.php:194 Html5MediaPlugin.php:281
 msgid "Download File"
-msgstr "Изтегляне на файл"
+msgstr "ファイルをダウンロード"
 
 #: Html5MediaPlugin.php:195
 msgid "Play"
-msgstr "Старт"
+msgstr "再生"
 
 #: Html5MediaPlugin.php:196
 msgid "Pause"
-msgstr "Пауза"
+msgstr "一次停止"
 
 #: Html5MediaPlugin.php:197
 msgid "Mute Toggle"
-msgstr "Превключване/ без звук"
+msgstr "消音切り替え"
 
 #: Html5MediaPlugin.php:198
 msgid "Fullscreen"
-msgstr "На цял екран"
+msgstr "フルスクリーン"
 
 #: Html5MediaPlugin.php:199
 msgid "Captions/Subtitles"
-msgstr "Надписи / субтитри"
+msgstr "字幕"
 
 #: Html5MediaPlugin.php:200
 msgid "None"
-msgstr "Нищо"
+msgstr "なし"
 
 #: Html5MediaPlugin.php:201
 msgid "Turn off Fullscreen"
-msgstr "Изключване на \"Цял екран\""
+msgstr "フルスクリーンをオフにする"
 
 #: Html5MediaPlugin.php:202
 msgid "Go Fullscreen"
-msgstr "Включи \"Цял екран\""
+msgstr "フルスクリーンにする"
 
 #: Html5MediaPlugin.php:203
 msgid "Unmute"
-msgstr "Със звук"
+msgstr "音を鳴らす"
 
 #: Html5MediaPlugin.php:204
 msgid "Mute"
-msgstr "Без звук"
+msgstr "消音"
 
 #: Html5MediaPlugin.php:205
 msgid "Download Video"
-msgstr "Изтегляне на видео"
+msgstr "ダウンロードしたビデオ"
 
 #: Html5MediaPlugin.php:206
 msgid "Close"
-msgstr "Затваряне"
+msgstr "閉じる"
 
 #: config-form.php:3
 msgid "Video Settings"
-msgstr "Настройки на Видео"
+msgstr "ビデオ設定"
 
 #: config-form.php:22 config-form.php:60
 msgid "Responsive Sizing"
-msgstr "Динамично оразмеряване"
+msgstr "自動リサイズ"
 
 #: config-form.php:26
 msgid ""
 "Check the box below to allow the video player to automatically match its "
 "size to its container."
-msgstr "Поставете отметка в квадратчето по-долу, за да се даде възможност на видео плеъра за да пресметне автоматично до нужния размер."
+msgstr "ビデオプレーヤーが自動的に幅をコンテナに合わせるようにするには、下のボックスをオンにします。"
 
 #: config-form.php:33 config-form.php:71 config-form.php:97
 msgid "MIME Types"
-msgstr "Видове MIME"
+msgstr "MIMEタイプ"
 
 #: config-form.php:41 config-form.php:79 config-form.php:105
 msgid "Extensions"
-msgstr "Разширения"
+msgstr "拡張子"
 
 #: config-form.php:49
 msgid "Audio Settings"
-msgstr "Настройки на звука"
+msgstr "オーディオ設定"
 
 #: config-form.php:64
 msgid ""
 "Check the box below to allow the audio player to automatically match its "
 "width to its container."
-msgstr "Поставете отметка в квадратчето по-долу, за да се даде възможност на аудио плеъра за да пресметне автоматично нужната ширина."
+msgstr "オーディオプレーヤーが自動的に幅をコンテナに合わせるようにするには、下のボックスをオンにします。"
 
 #: config-form.php:87
 msgid "Text Settings"
-msgstr "Настройки на текста"
+msgstr "テキスト設定"
 
 #: config-form.php:90
 msgid ""
 "Text files are data like subtitles and chapter names. HTML5 Media will "
 "include them as tracks of audio or video files with the same original "
 "filename on the same item."
-msgstr "Текстови файлове са данни, както субтитрите и заглавията. HTML5 Media ще ги включи като пътечки към аудио или видео файловете със същия оригинален файла в един и същи документ"
+msgstr "テキストファイルは字幕や章の名前のようなデータです。 HTML 5メディアは、それらを同じアイテムの同じ元のファイル名を持つオーディオまたはビデオファイルのトラックとして含めます。"
 
 #: config-form.php:113
 msgid "Common Settings"
-msgstr "Общи настройки"
+msgstr "共通設定"
 
 #: config-form.php:116
 msgid "Preload"
-msgstr "Презареждане"
+msgstr "あらかじめロード"
 
 #: config-form.php:123
 msgid "Metadata Only"
-msgstr "Само метаданните"
+msgstr "メタデータのみ"
 
 #: config-form.php:124
 msgid "Entire Media"
-msgstr "Цялата медия"
+msgstr "メディア全体"
 
 #: config-form.php:125
 msgid "Disabled"
-msgstr "Изключено"
+msgstr "無効"
 
 #: config-form.php:133
 msgid "Show Download Link"
-msgstr ""
+msgstr "ダウンロードリンクを表示"

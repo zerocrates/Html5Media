@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: omeka-plugin-Html5Media\n"
 "Report-Msgid-Bugs-To: http://github.com/zerocrates/Html5Media/issues\n"
 "POT-Creation-Date: 2013-05-14 13:53-0500\n"
-"PO-Revision-Date: 2018-03-03 07:44+0000\n"
+"PO-Revision-Date: 2018-03-14 21:08+0000\n"
 "Last-Translator: Hong Zhang <zhangh@unlv.nevada.edu>\n"
 "Language-Team: Chinese (China) (http://www.transifex.com/omeka/omeka-plugin-html5media/language/zh_CN/)\n"
 "MIME-Version: 1.0\n"
@@ -18,55 +18,55 @@ msgstr ""
 "Language: zh_CN\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
-#: Html5MediaPlugin.php:189
+#: Html5MediaPlugin.php:194 Html5MediaPlugin.php:281
 msgid "Download File"
 msgstr "下载文件"
 
-#: Html5MediaPlugin.php:190
+#: Html5MediaPlugin.php:195
 msgid "Play"
 msgstr "播放"
 
-#: Html5MediaPlugin.php:191
+#: Html5MediaPlugin.php:196
 msgid "Pause"
 msgstr "暂停"
 
-#: Html5MediaPlugin.php:192
+#: Html5MediaPlugin.php:197
 msgid "Mute Toggle"
 msgstr "静音开关"
 
-#: Html5MediaPlugin.php:193
+#: Html5MediaPlugin.php:198
 msgid "Fullscreen"
 msgstr "全屏"
 
-#: Html5MediaPlugin.php:194
+#: Html5MediaPlugin.php:199
 msgid "Captions/Subtitles"
 msgstr "标题/字幕"
 
-#: Html5MediaPlugin.php:195
+#: Html5MediaPlugin.php:200
 msgid "None"
 msgstr "无"
 
-#: Html5MediaPlugin.php:196
+#: Html5MediaPlugin.php:201
 msgid "Turn off Fullscreen"
 msgstr "关闭全屏"
 
-#: Html5MediaPlugin.php:197
+#: Html5MediaPlugin.php:202
 msgid "Go Fullscreen"
 msgstr "去全屏"
 
-#: Html5MediaPlugin.php:198
+#: Html5MediaPlugin.php:203
 msgid "Unmute"
 msgstr "解除静音"
 
-#: Html5MediaPlugin.php:199
+#: Html5MediaPlugin.php:204
 msgid "Mute"
 msgstr "静音"
 
-#: Html5MediaPlugin.php:200
+#: Html5MediaPlugin.php:205
 msgid "Download Video"
 msgstr "下载视频"
 
-#: Html5MediaPlugin.php:201
+#: Html5MediaPlugin.php:206
 msgid "Close"
 msgstr "关闭"
 
@@ -132,3 +132,7 @@ msgstr "整个媒体"
 #: config-form.php:125
 msgid "Disabled"
 msgstr "禁用"
+
+#: config-form.php:133
+msgid "Show Download Link"
+msgstr "显示下载链接"

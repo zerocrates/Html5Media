@@ -5,14 +5,14 @@
 # Translators:
 # ctsolkas <tsolkiss@gmail.com>, 2014
 # ctsolkas <tsolkiss@gmail.com>, 2014
-# Γιάννης Κασκαμανίδης <kiolalis@gmail.com>, 2016
+# Yannis Kaskamanidis <kiolalis@gmail.com>, 2016
 msgid ""
 msgstr ""
 "Project-Id-Version: omeka-plugin-Html5Media\n"
 "Report-Msgid-Bugs-To: http://github.com/zerocrates/Html5Media/issues\n"
 "POT-Creation-Date: 2013-05-14 13:53-0500\n"
-"PO-Revision-Date: 2017-09-19 21:27+0000\n"
-"Last-Translator: Γιάννης Κασκαμανίδης <kiolalis@gmail.com>\n"
+"PO-Revision-Date: 2018-03-10 02:49+0000\n"
+"Last-Translator: John Flatness <john@zerocrates.org>\n"
 "Language-Team: Greek (Greece) (http://www.transifex.com/omeka/omeka-plugin-html5media/language/el_GR/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -20,55 +20,55 @@ msgstr ""
 "Language: el_GR\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: Html5MediaPlugin.php:189
+#: Html5MediaPlugin.php:194 Html5MediaPlugin.php:281
 msgid "Download File"
 msgstr "Κατέβασμα Αρχείου"
 
-#: Html5MediaPlugin.php:190
+#: Html5MediaPlugin.php:195
 msgid "Play"
 msgstr "Αναπαραγωγή"
 
-#: Html5MediaPlugin.php:191
+#: Html5MediaPlugin.php:196
 msgid "Pause"
 msgstr "Παύση"
 
-#: Html5MediaPlugin.php:192
+#: Html5MediaPlugin.php:197
 msgid "Mute Toggle"
 msgstr "Διακόπτης Σίγασης"
 
-#: Html5MediaPlugin.php:193
+#: Html5MediaPlugin.php:198
 msgid "Fullscreen"
 msgstr "Πλήρης Οθόνη"
 
-#: Html5MediaPlugin.php:194
+#: Html5MediaPlugin.php:199
 msgid "Captions/Subtitles"
 msgstr "Λεζάντες/Υπότιτλοι"
 
-#: Html5MediaPlugin.php:195
+#: Html5MediaPlugin.php:200
 msgid "None"
 msgstr "Καμία Επιλογή"
 
-#: Html5MediaPlugin.php:196
+#: Html5MediaPlugin.php:201
 msgid "Turn off Fullscreen"
 msgstr "Απενεργοποίηση Πλήρους Οθόνης"
 
-#: Html5MediaPlugin.php:197
+#: Html5MediaPlugin.php:202
 msgid "Go Fullscreen"
 msgstr "Ενεργοποίηση Πλήρους Οθόνης"
 
-#: Html5MediaPlugin.php:198
+#: Html5MediaPlugin.php:203
 msgid "Unmute"
 msgstr "Κατάργηση Σίγασης"
 
-#: Html5MediaPlugin.php:199
+#: Html5MediaPlugin.php:204
 msgid "Mute"
 msgstr "Σίγαση"
 
-#: Html5MediaPlugin.php:200
+#: Html5MediaPlugin.php:205
 msgid "Download Video"
 msgstr "Κατέβασμα Βίντεο"
 
-#: Html5MediaPlugin.php:201
+#: Html5MediaPlugin.php:206
 msgid "Close"
 msgstr "Κλείσιμο"
 
@@ -134,3 +134,7 @@ msgstr "Όλα τα πολυμέσα"
 #: config-form.php:125
 msgid "Disabled"
 msgstr "Απενεργοποιημένο"
+
+#: config-form.php:133
+msgid "Show Download Link"
+msgstr ""

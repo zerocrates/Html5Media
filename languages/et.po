@@ -3,14 +3,14 @@
 # This file is distributed under the GNU General Public License, v3.
 # 
 # Translators:
-# Rivo Zängov <eraser@eraser.ee>, 2015
+# Rivo Zängov <eraser@eraser.ee>, 2015,2018
 msgid ""
 msgstr ""
 "Project-Id-Version: omeka-plugin-Html5Media\n"
 "Report-Msgid-Bugs-To: http://github.com/zerocrates/Html5Media/issues\n"
 "POT-Creation-Date: 2013-05-14 13:53-0500\n"
-"PO-Revision-Date: 2017-09-19 19:06+0000\n"
-"Last-Translator: John Flatness <john@zerocrates.org>\n"
+"PO-Revision-Date: 2018-04-23 12:26+0000\n"
+"Last-Translator: Rivo Zängov <eraser@eraser.ee>\n"
 "Language-Team: Estonian (http://www.transifex.com/omeka/omeka-plugin-html5media/language/et/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -18,55 +18,55 @@ msgstr ""
 "Language: et\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: Html5MediaPlugin.php:189
+#: Html5MediaPlugin.php:194 Html5MediaPlugin.php:281
 msgid "Download File"
 msgstr "Laadi fail alla"
 
-#: Html5MediaPlugin.php:190
+#: Html5MediaPlugin.php:195
 msgid "Play"
 msgstr "Esita"
 
-#: Html5MediaPlugin.php:191
+#: Html5MediaPlugin.php:196
 msgid "Pause"
 msgstr "Peata"
 
-#: Html5MediaPlugin.php:192
+#: Html5MediaPlugin.php:197
 msgid "Mute Toggle"
 msgstr "Heli sees/väljas"
 
-#: Html5MediaPlugin.php:193
+#: Html5MediaPlugin.php:198
 msgid "Fullscreen"
 msgstr "Täisekraanil"
 
-#: Html5MediaPlugin.php:194
+#: Html5MediaPlugin.php:199
 msgid "Captions/Subtitles"
 msgstr "Subtiitrid"
 
-#: Html5MediaPlugin.php:195
+#: Html5MediaPlugin.php:200
 msgid "None"
 msgstr "Pole"
 
-#: Html5MediaPlugin.php:196
+#: Html5MediaPlugin.php:201
 msgid "Turn off Fullscreen"
 msgstr "Välju täisekraanist"
 
-#: Html5MediaPlugin.php:197
+#: Html5MediaPlugin.php:202
 msgid "Go Fullscreen"
 msgstr "Mine täisekraanile"
 
-#: Html5MediaPlugin.php:198
+#: Html5MediaPlugin.php:203
 msgid "Unmute"
 msgstr "Heli sisse"
 
-#: Html5MediaPlugin.php:199
+#: Html5MediaPlugin.php:204
 msgid "Mute"
 msgstr "Heli välja"
 
-#: Html5MediaPlugin.php:200
+#: Html5MediaPlugin.php:205
 msgid "Download Video"
 msgstr "Laadi video alla"
 
-#: Html5MediaPlugin.php:201
+#: Html5MediaPlugin.php:206
 msgid "Close"
 msgstr "Sulge"
 
@@ -100,7 +100,7 @@ msgstr "Heli seaded"
 msgid ""
 "Check the box below to allow the audio player to automatically match its "
 "width to its container."
-msgstr ""
+msgstr "Märgi see kast, et lubada videopleieri suuruse automaatne muutmine vastavalt selle ümber olevale elementidele."
 
 #: config-form.php:87
 msgid "Text Settings"
@@ -115,20 +115,24 @@ msgstr "Tekstifailid nagu näiteks subtiitrid või peatükkide nimed. HTML5 Medi
 
 #: config-form.php:113
 msgid "Common Settings"
-msgstr ""
+msgstr "Üldised seaded"
 
 #: config-form.php:116
 msgid "Preload"
-msgstr ""
+msgstr "Eellaadimine"
 
 #: config-form.php:123
 msgid "Metadata Only"
-msgstr ""
+msgstr "Ainult metaandmed"
 
 #: config-form.php:124
 msgid "Entire Media"
-msgstr ""
+msgstr "Kogu meedia"
 
 #: config-form.php:125
 msgid "Disabled"
-msgstr ""
+msgstr "Välja lülitatud"
+
+#: config-form.php:133
+msgid "Show Download Link"
+msgstr "Näita allalaadimise linki"
