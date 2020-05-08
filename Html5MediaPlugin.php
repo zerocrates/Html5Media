@@ -210,11 +210,14 @@ class Html5MediaPlugin extends Omeka_Plugin_AbstractPlugin
             queue_js_string($l10nScript);
         }
 
-        queue_js_file('mediaelement-and-player.min', 'mediaelement');
-        queue_css_file('mediaelementplayer-legacy.min', 'all', false, 'mediaelement');
-        queue_css_file('html5media', 'all');
+        $pluginLoader = Zend_Registry::get('plugin_loader');
+        $html5media = $pluginLoader->getPlugin('Html5Media');
+        $version = $html5media->getIniVersion();
+        queue_js_file('mediaelement-and-player.min', 'mediaelement', array(), $version);
+        queue_css_file('mediaelementplayer-legacy.min', 'all', false, 'mediaelement', $version);
+        queue_css_file('html5media', 'all', null, 'css', $version);
         if (is_admin_theme()) {
-            queue_css_file('html5media-mejs-overrides', 'all');
+            queue_css_file('html5media-mejs-overrides', 'all', null, 'css', $version);
         }
     }
 
